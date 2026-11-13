@@ -1,0 +1,1536 @@
+{
+ "customers": {
+  "desc": "Master. Known (registered) shoppers. Guest carts have no customer row.",
+  "pk": [
+   "customer_id"
+  ],
+  "id_regex": "CUS-\\d{6}",
+  "fks": [],
+  "cardinality": "Customer 1:N Cart, 1:N Consent, 1:N Session, 1:N Order (all optional on the child side: guests).",
+  "fields": [
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "CUS-000001 pattern; immutable"
+   },
+   {
+    "name": "email",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "synthetic address on reserved example.test domain"
+   },
+   {
+    "name": "phone",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "synthetic E.164-like number; NULL => no SMS channel"
+   },
+   {
+    "name": "first_name",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "region",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "NA",
+     "EU",
+     "APAC",
+     "LATAM"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "signup_source",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "web",
+     "app",
+     "store"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "created_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "<= first session/cart of the customer"
+   }
+  ]
+ },
+ "consents": {
+  "desc": "Master + event history. One row per consent state change per customer/channel; never updated in place (effective_to is the only derived back-fill = next row's effective_from).",
+  "pk": [
+   "consent_id"
+  ],
+  "id_regex": "CON-\\d{6,}",
+  "fks": [
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ]
+  ],
+  "cardinality": "Customer 1:N Consent; per (customer, channel) rows form a contiguous, non-overlapping timeline.",
+  "fields": [
+   {
+    "name": "consent_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "CON-000001 pattern"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers"
+   },
+   {
+    "name": "channel",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "email",
+     "sms"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "status",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "opt_in",
+     "opt_out"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "consecutive rows for a channel alternate or restate state"
+   },
+   {
+    "name": "effective_from",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ">= customer.created_at"
+   },
+   {
+    "name": "effective_to",
+    "type": "timestamp",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "NULL = current; == next row effective_from"
+   },
+   {
+    "name": "source",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "signup",
+     "preference_center",
+     "unsubscribe_link",
+     "sms_stop"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   }
+  ]
+ },
+ "products": {
+  "desc": "Master. Small synthetic catalogue (no external data).",
+  "pk": [
+   "sku"
+  ],
+  "id_regex": "SKU-\\d{4}",
+  "fks": [],
+  "cardinality": "Product 1:N CartLine.",
+  "fields": [
+   {
+    "name": "sku",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "SKU-0001 pattern"
+   },
+   {
+    "name": "product_name",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "category",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "unit_price",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "> 0, 2 dp"
+   }
+  ]
+ },
+ "sessions": {
+  "desc": "Master/event. Browsing sessions. A cart can span several sessions on different devices.",
+  "pk": [
+   "session_id"
+  ],
+  "id_regex": "SES-2026-\\d{6}",
+  "fks": [
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ]
+  ],
+  "cardinality": "Customer 0..1:N Session (guest sessions have NULL customer); Cart N:M Session via cart_sessions.",
+  "fields": [
+   {
+    "name": "session_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "SES-2026-000001; numbered by started_at"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers; NULL for guests"
+   },
+   {
+    "name": "device_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "stable per customer device; one customer has 1-3 devices"
+   },
+   {
+    "name": "device_type",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "mobile",
+     "desktop",
+     "tablet"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "purpose",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "shopping",
+     "recovery_return"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "started_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "ended_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ">= started_at and >= last cart event in the session"
+   }
+  ]
+ },
+ "carts": {
+  "desc": "Master. Current-state view of a cart; full history lives in cart_events.",
+  "pk": [
+   "cart_id"
+  ],
+  "id_regex": "CART-2026-\\d{6}",
+  "fks": [
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ]
+  ],
+  "cardinality": "Customer 0..1:N Cart; Cart 1:N CartLine; Cart 1:N CartEvent; Cart 0..1:1 Order.",
+  "fields": [
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "CART-2026-000001; numbered by created_at"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers; NULL = guest (not contactable)"
+   },
+   {
+    "name": "created_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "last_activity_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "time of last cart-modifying/checkout event; >= created_at"
+   },
+   {
+    "name": "currency",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "USD"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "item_count",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "units",
+    "unique": false,
+    "rule": "sum(cart_lines.quantity)"
+   },
+   {
+    "name": "cart_total",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== sum(cart_lines.line_total) (violated only by labelled stale-total cases)"
+   },
+   {
+    "name": "status",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "purchased",
+     "abandoned",
+     "recovered"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "purchased=ordered inside window; recovered=abandoned then ordered; abandoned=never ordered"
+   },
+   {
+    "name": "abandoned_at",
+    "type": "timestamp",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "== last_activity_at + 60 min when flagged; NULL if never flagged"
+   }
+  ]
+ },
+ "cart_sessions": {
+  "desc": "Bridge (N:M) Cart <-> Session.",
+  "pk": [
+   "cart_id",
+   "session_id"
+  ],
+  "id_regex": null,
+  "fks": [
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ],
+   [
+    "session_id",
+    "sessions",
+    "session_id"
+   ]
+  ],
+  "cardinality": "Cart N:M Session.",
+  "fields": [
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK carts"
+   },
+   {
+    "name": "session_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK sessions"
+   },
+   {
+    "name": "role",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "created",
+     "modified",
+     "recovery_visit"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   }
+  ]
+ },
+ "cart_lines": {
+  "desc": "Child. Final line items of the cart (quantity reflects the last quantity update).",
+  "pk": [
+   "cart_line_id"
+  ],
+  "id_regex": "LINE-2026-\\d{6}",
+  "fks": [
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ],
+   [
+    "sku",
+    "products",
+    "sku"
+   ]
+  ],
+  "cardinality": "Cart 1:N CartLine; Product 1:N CartLine.",
+  "fields": [
+   {
+    "name": "cart_line_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "LINE-2026-000001"
+   },
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK carts"
+   },
+   {
+    "name": "line_no",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "1..n within the cart; unique per cart"
+   },
+   {
+    "name": "sku",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK products"
+   },
+   {
+    "name": "quantity",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "units",
+    "unique": false,
+    "rule": "1..5"
+   },
+   {
+    "name": "unit_price",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== products.unit_price at add time"
+   },
+   {
+    "name": "line_total",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== quantity * unit_price"
+   },
+   {
+    "name": "added_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ">= cart.created_at"
+   }
+  ]
+ },
+ "cart_events": {
+  "desc": "Event history of cart lifecycle (append-only).",
+  "pk": [
+   "cart_event_id"
+  ],
+  "id_regex": "CEV-2026-\\d{6,}",
+  "fks": [
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ],
+   [
+    "session_id",
+    "sessions",
+    "session_id"
+   ],
+   [
+    "cart_line_id",
+    "cart_lines",
+    "cart_line_id"
+   ]
+  ],
+  "cardinality": "Cart 1:N CartEvent.",
+  "fields": [
+   {
+    "name": "cart_event_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "CEV-2026-000001; numbered by event_ts"
+   },
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK carts"
+   },
+   {
+    "name": "session_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK sessions; NULL for system events (abandoned_flagged)"
+   },
+   {
+    "name": "event_type",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "cart_created",
+     "item_added",
+     "quantity_updated",
+     "checkout_started",
+     "abandoned_flagged",
+     "cart_resumed",
+     "purchased"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "event_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "cart_line_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK cart_lines for item_added/quantity_updated"
+   },
+   {
+    "name": "old_quantity",
+    "type": "int",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "quantity_updated only"
+   },
+   {
+    "name": "new_quantity",
+    "type": "int",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "item_added / quantity_updated"
+   }
+  ]
+ },
+ "abandonment_decisions": {
+  "desc": "Event. Explicit decision taken when a cart is flagged abandoned (traceability of targeting).",
+  "pk": [
+   "decision_id"
+  ],
+  "id_regex": "ABD-2026-\\d{6}",
+  "fks": [
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ]
+  ],
+  "cardinality": "Cart 0..1:1 AbandonmentDecision.",
+  "fields": [
+   {
+    "name": "decision_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "ABD-2026-000001"
+   },
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "FK carts; exactly the carts having an abandoned_flagged event"
+   },
+   {
+    "name": "abandoned_at",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "== carts.abandoned_at"
+   },
+   {
+    "name": "recovery_decision",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "targeted",
+     "holdout",
+     "ineligible_guest",
+     "ineligible_low_value"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "reason",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   }
+  ]
+ },
+ "campaigns": {
+  "desc": "Master. Weekly recovery campaign per variant (created on first scheduled message).",
+  "pk": [
+   "campaign_id"
+  ],
+  "id_regex": "CMP-2026-\\d{6}",
+  "fks": [],
+  "cardinality": "Campaign N:M MessageTemplate via campaign_templates; Campaign 1:N ScheduledMessage.",
+  "fields": [
+   {
+    "name": "campaign_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "CMP-2026-000001; numbered by first use"
+   },
+   {
+    "name": "name",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "variant",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "V1",
+     "V2",
+     "V3"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "channel",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "email",
+     "sms"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "start_date",
+    "type": "date",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "Monday of the ISO week"
+   },
+   {
+    "name": "end_date",
+    "type": "date",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "== start_date + 6 days"
+   },
+   {
+    "name": "delay_minutes",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "minutes",
+    "unique": false,
+    "rule": "step-1 delay after abandoned_at"
+   },
+   {
+    "name": "attribution_window_days",
+    "type": "int",
+    "required": true,
+    "allowed": [
+     7
+    ],
+    "unit": "days",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "status",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "completed"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   }
+  ]
+ },
+ "message_templates": {
+  "desc": "Master. One template per variant x step.",
+  "pk": [
+   "template_id"
+  ],
+  "id_regex": "TPL-V\\d-S\\d",
+  "fks": [],
+  "cardinality": "Template N:M Campaign.",
+  "fields": [
+   {
+    "name": "template_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "TPL-V1-S1 pattern"
+   },
+   {
+    "name": "variant",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "V1",
+     "V2",
+     "V3"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "channel",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "email",
+     "sms"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "step",
+    "type": "int",
+    "required": true,
+    "allowed": [
+     1,
+     2
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "subject",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "email only"
+   },
+   {
+    "name": "discount_pct",
+    "type": "int",
+    "required": true,
+    "allowed": [
+     0,
+     5,
+     10
+    ],
+    "unit": "percent",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "version",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "effective_from",
+    "type": "date",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   }
+  ]
+ },
+ "campaign_templates": {
+  "desc": "Bridge (N:M) Campaign <-> MessageTemplate.",
+  "pk": [
+   "campaign_id",
+   "template_id"
+  ],
+  "id_regex": null,
+  "fks": [
+   [
+    "campaign_id",
+    "campaigns",
+    "campaign_id"
+   ],
+   [
+    "template_id",
+    "message_templates",
+    "template_id"
+   ]
+  ],
+  "cardinality": "Campaign N:M MessageTemplate.",
+  "fields": [
+   {
+    "name": "campaign_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK campaigns"
+   },
+   {
+    "name": "template_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK message_templates"
+   }
+  ]
+ },
+ "scheduled_messages": {
+  "desc": "Event. A planned recovery message for a cart/step (one per cart x step).",
+  "pk": [
+   "message_id"
+  ],
+  "id_regex": "MSG-CART-2026-\\d{6}-\\d{2}",
+  "fks": [
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ],
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ],
+   [
+    "campaign_id",
+    "campaigns",
+    "campaign_id"
+   ],
+   [
+    "template_id",
+    "message_templates",
+    "template_id"
+   ]
+  ],
+  "cardinality": "Cart 1:N ScheduledMessage (max 2); ScheduledMessage 1:1 SendAttempt.",
+  "fields": [
+   {
+    "name": "message_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "MSG-<cart_id>-<step 2 digits>"
+   },
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK carts; cart must be abandoned"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers; == carts.customer_id"
+   },
+   {
+    "name": "campaign_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK campaigns"
+   },
+   {
+    "name": "template_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK message_templates; template step == step"
+   },
+   {
+    "name": "step",
+    "type": "int",
+    "required": true,
+    "allowed": [
+     1,
+     2
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "channel",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "email",
+     "sms"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "planned_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ">= carts.abandoned_at"
+   },
+   {
+    "name": "scheduled_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "planned_ts after SMS quiet-hours deferral (21:00-08:00)"
+   }
+  ]
+ },
+ "send_attempts": {
+  "desc": "Event. Final decision for each scheduled message: sent or suppressed (with reason and evidence).",
+  "pk": [
+   "send_id"
+  ],
+  "id_regex": "SEND-2026-\\d{6}",
+  "fks": [
+   [
+    "message_id",
+    "scheduled_messages",
+    "message_id"
+   ],
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ],
+   [
+    "consent_id",
+    "consents",
+    "consent_id"
+   ]
+  ],
+  "cardinality": "ScheduledMessage 1:1 SendAttempt; SendAttempt 1:N SendEvent.",
+  "fields": [
+   {
+    "name": "send_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "SEND-2026-000001; numbered by attempt_ts"
+   },
+   {
+    "name": "message_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "FK scheduled_messages"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers"
+   },
+   {
+    "name": "channel",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "email",
+     "sms"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "attempt_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "== scheduled_ts"
+   },
+   {
+    "name": "status",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "sent",
+     "suppressed_no_consent",
+     "suppressed_consent_withdrawn",
+     "suppressed_frequency_cap",
+     "suppressed_already_purchased"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "consent_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK consents: the consent row evaluated at attempt_ts"
+   },
+   {
+    "name": "sends_last_24h",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "sent messages to customer in the preceding 24h (cap 1)"
+   },
+   {
+    "name": "sends_last_7d",
+    "type": "int",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "sent messages to customer in the preceding 7d (cap 3)"
+   },
+   {
+    "name": "delivery_status",
+    "type": "string",
+    "required": false,
+    "allowed": [
+     "delivered",
+     "bounced"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": "only when status == sent"
+   }
+  ]
+ },
+ "send_events": {
+  "desc": "Event history for sent messages (delivery/open/click/unsubscribe).",
+  "pk": [
+   "event_id"
+  ],
+  "id_regex": "EVT-2026-\\d{6}",
+  "fks": [
+   [
+    "send_id",
+    "send_attempts",
+    "send_id"
+   ]
+  ],
+  "cardinality": "SendAttempt 1:N SendEvent.",
+  "fields": [
+   {
+    "name": "event_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "EVT-2026-000001; numbered by event_ts"
+   },
+   {
+    "name": "send_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK send_attempts with status sent"
+   },
+   {
+    "name": "event_type",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "delivered",
+     "bounced",
+     "opened",
+     "clicked",
+     "unsubscribed"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "event_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": ">= send attempt_ts; opened/clicked only after delivered"
+   }
+  ]
+ },
+ "orders": {
+  "desc": "Transaction. One order per purchased/recovered cart.",
+  "pk": [
+   "order_id"
+  ],
+  "id_regex": "ORD-2026-\\d{6}",
+  "fks": [
+   [
+    "customer_id",
+    "customers",
+    "customer_id"
+   ],
+   [
+    "cart_id",
+    "carts",
+    "cart_id"
+   ],
+   [
+    "session_id",
+    "sessions",
+    "session_id"
+   ]
+  ],
+  "cardinality": "Cart 1:0..1 Order; Order 0..N Attribution (rule: exactly 0..1).",
+  "fields": [
+   {
+    "name": "order_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "ORD-2026-000001; numbered by order_ts"
+   },
+   {
+    "name": "customer_id",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK customers; NULL for guest orders"
+   },
+   {
+    "name": "cart_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "FK carts"
+   },
+   {
+    "name": "session_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK sessions: purchasing session"
+   },
+   {
+    "name": "order_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "> cart.created_at"
+   },
+   {
+    "name": "subtotal",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== sum(cart_lines.line_total)"
+   },
+   {
+    "name": "discount_amount",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== round(subtotal * pct/100) when promo_code set"
+   },
+   {
+    "name": "shipping_fee",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "5.99 if subtotal < 75.00 else 0.00"
+   },
+   {
+    "name": "order_total",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== subtotal - discount_amount + shipping_fee"
+   },
+   {
+    "name": "promo_code",
+    "type": "string",
+    "required": false,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "RECOVER5 / RECOVER10 (valid 7 days after the click that issued it)"
+   }
+  ]
+ },
+ "attributions": {
+  "desc": "Derived. Last-click attribution of an order to one SendAttempt within 7 days of the click.",
+  "pk": [
+   "attribution_id"
+  ],
+  "id_regex": "ATT-2026-\\d{6}",
+  "fks": [
+   [
+    "order_id",
+    "orders",
+    "order_id"
+   ],
+   [
+    "send_id",
+    "send_attempts",
+    "send_id"
+   ],
+   [
+    "message_id",
+    "scheduled_messages",
+    "message_id"
+   ],
+   [
+    "campaign_id",
+    "campaigns",
+    "campaign_id"
+   ]
+  ],
+  "cardinality": "Order 0..1:1 Attribution (more than one is a defect); SendAttempt 1:N Attribution.",
+  "fields": [
+   {
+    "name": "attribution_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": true,
+    "rule": "ATT-2026-000001"
+   },
+   {
+    "name": "order_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK orders; should be unique"
+   },
+   {
+    "name": "send_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK send_attempts"
+   },
+   {
+    "name": "message_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK scheduled_messages"
+   },
+   {
+    "name": "campaign_id",
+    "type": "string",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "FK campaigns"
+   },
+   {
+    "name": "model",
+    "type": "string",
+    "required": true,
+    "allowed": [
+     "last_click"
+    ],
+    "unit": "",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "window_days",
+    "type": "int",
+    "required": true,
+    "allowed": [
+     7
+    ],
+    "unit": "days",
+    "unique": false,
+    "rule": ""
+   },
+   {
+    "name": "click_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "<= order_ts <= click_ts + window_days"
+   },
+   {
+    "name": "order_ts",
+    "type": "timestamp",
+    "required": true,
+    "allowed": "",
+    "unit": "",
+    "unique": false,
+    "rule": "== orders.order_ts"
+   },
+   {
+    "name": "lag_hours",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "hours",
+    "unique": false,
+    "rule": "(order_ts - click_ts) in hours, 2 dp"
+   },
+   {
+    "name": "attributed_revenue",
+    "type": "decimal",
+    "required": true,
+    "allowed": "",
+    "unit": "USD",
+    "unique": false,
+    "rule": "== orders.order_total"
+   }
+  ]
+ }
+}

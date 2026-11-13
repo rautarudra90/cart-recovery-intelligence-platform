@@ -1,0 +1,1259 @@
+{
+ "data_dir": "data/full",
+ "row_counts": {
+  "customers": 20000,
+  "consents": 37464,
+  "products": 80,
+  "sessions": 60043,
+  "carts": 50000,
+  "cart_sessions": 60043,
+  "cart_lines": 106013,
+  "cart_events": 259597,
+  "abandonment_decisions": 20060,
+  "campaigns": 120,
+  "message_templates": 6,
+  "campaign_templates": 240,
+  "scheduled_messages": 10000,
+  "send_attempts": 10000,
+  "send_events": 10693,
+  "orders": 34084,
+  "attributions": 411
+ },
+ "total_checks": 144,
+ "passed": 137,
+ "flagged": 7,
+ "unexpected_violations": {},
+ "injected_anomaly_detection": {
+  "message_sent_after_optout": {
+   "injected": 44,
+   "detected": 44,
+   "exact_match": true
+  },
+  "cart_abandoned_after_purchase": {
+   "injected": 60,
+   "detected": 60,
+   "exact_match": true
+  },
+  "cart_total_stale_after_quantity_update": {
+   "injected": 75,
+   "detected": 75,
+   "exact_match": true
+  },
+  "attribution_double_counted_across_campaigns": {
+   "injected": 8,
+   "detected": 8,
+   "exact_match": true
+  },
+  "boundary_abandonment_window": {
+   "cases": 329,
+   "rule_agrees": true
+  }
+ },
+ "metrics": {
+  "sends": 7172,
+  "suppressed": 2828,
+  "delivered": 6982,
+  "clicked": 890,
+  "attributed_orders_dedup": 403,
+  "attributed_revenue_dedup": 63208.5,
+  "attributed_revenue_naive": 63960.2,
+  "orders": 34084,
+  "abandoned_carts": 20060,
+  "recovered_carts": 4084,
+  "send_status": {
+   "sent": 7172,
+   "suppressed_consent_withdrawn": 368,
+   "suppressed_no_consent": 1874,
+   "suppressed_frequency_cap": 80,
+   "suppressed_already_purchased": 506
+  }
+ },
+ "checks": [
+  {
+   "check": "pk_unique:customers",
+   "violations": 0,
+   "checked": 20000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:customers",
+   "violations": 0,
+   "checked": 20000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:customers",
+   "violations": 0,
+   "checked": 20000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:customers",
+   "violations": 0,
+   "checked": 20000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:consents",
+   "violations": 0,
+   "checked": 37464,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:consents",
+   "violations": 0,
+   "checked": 37464,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:consents",
+   "violations": 0,
+   "checked": 37464,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:consents",
+   "violations": 0,
+   "checked": 37464,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:products",
+   "violations": 0,
+   "checked": 80,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:products",
+   "violations": 0,
+   "checked": 80,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:products",
+   "violations": 0,
+   "checked": 80,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:products",
+   "violations": 0,
+   "checked": 80,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:carts",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:carts",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:carts",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:carts",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:cart_sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:cart_sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:cart_sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:cart_lines",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:cart_lines",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:cart_lines",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:cart_lines",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:cart_events",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:cart_events",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:cart_events",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:cart_events",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:abandonment_decisions",
+   "violations": 0,
+   "checked": 20060,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:abandonment_decisions",
+   "violations": 0,
+   "checked": 20060,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:abandonment_decisions",
+   "violations": 0,
+   "checked": 20060,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:abandonment_decisions",
+   "violations": 0,
+   "checked": 20060,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:campaigns",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:campaigns",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:campaigns",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:campaigns",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:message_templates",
+   "violations": 0,
+   "checked": 6,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:message_templates",
+   "violations": 0,
+   "checked": 6,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:message_templates",
+   "violations": 0,
+   "checked": 6,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:message_templates",
+   "violations": 0,
+   "checked": 6,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:campaign_templates",
+   "violations": 0,
+   "checked": 240,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:campaign_templates",
+   "violations": 0,
+   "checked": 240,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:campaign_templates",
+   "violations": 0,
+   "checked": 240,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:scheduled_messages",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:scheduled_messages",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:scheduled_messages",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:scheduled_messages",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:send_attempts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:send_attempts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:send_attempts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:send_attempts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:send_events",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:send_events",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:send_events",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:send_events",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:orders",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:orders",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:orders",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:orders",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "pk_unique:attributions",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "id_pattern:attributions",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "required_not_null:attributions",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "enums_types_uniques:attributions",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:consents.customer_id->customers",
+   "violations": 0,
+   "checked": 37464,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:sessions.customer_id->customers",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:carts.customer_id->customers",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_sessions.cart_id->carts",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_sessions.session_id->sessions",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_lines.cart_id->carts",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_lines.sku->products",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_events.cart_id->carts",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_events.session_id->sessions",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:cart_events.cart_line_id->cart_lines",
+   "violations": 0,
+   "checked": 259597,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:abandonment_decisions.cart_id->carts",
+   "violations": 0,
+   "checked": 20060,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:campaign_templates.campaign_id->campaigns",
+   "violations": 0,
+   "checked": 240,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:campaign_templates.template_id->message_templates",
+   "violations": 0,
+   "checked": 240,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:scheduled_messages.cart_id->carts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:scheduled_messages.customer_id->customers",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:scheduled_messages.campaign_id->campaigns",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:scheduled_messages.template_id->message_templates",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:send_attempts.message_id->scheduled_messages",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:send_attempts.customer_id->customers",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:send_attempts.consent_id->consents",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:send_events.send_id->send_attempts",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:orders.customer_id->customers",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:orders.cart_id->carts",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:orders.session_id->sessions",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:attributions.order_id->orders",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:attributions.send_id->send_attempts",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:attributions.message_id->scheduled_messages",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "fk:attributions.campaign_id->campaigns",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:session_end>=start",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:session_end>=last_cart_event",
+   "violations": 0,
+   "checked": 60043,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:cart_created<=last_activity",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:customer_created<=cart_created",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:order>cart_created",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:message>=abandoned_at",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:attempt_ts==scheduled_ts",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:send_event>=attempt",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "date:open/click_after_delivery",
+   "violations": 0,
+   "checked": 7172,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:events_only_for_sent",
+   "violations": 0,
+   "checked": 10693,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:line_total=qty*price",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:line_price=catalogue",
+   "violations": 0,
+   "checked": 106013,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:item_count=sum(qty)",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:cart_total=sum(lines)",
+   "violations": 75,
+   "checked": 50000,
+   "note": "stale totals",
+   "sample": [
+    "CART-2026-000894",
+    "CART-2026-001060",
+    "CART-2026-001248"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "arith:order_subtotal=sum(lines)",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:order_total",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:shipping_rule",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "arith:line_no_unique_per_cart",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:abandonment_is_time_based",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:abandoned_flag_after_purchase",
+   "violations": 60,
+   "checked": 50000,
+   "note": "carts flagged abandoned but ordered inside window",
+   "sample": [
+    "CART-2026-000581",
+    "CART-2026-001052",
+    "CART-2026-001133"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "lifecycle:cart_status_matches_rule",
+   "violations": 60,
+   "checked": 50000,
+   "note": "",
+   "sample": [
+    "CART-2026-000581",
+    "CART-2026-001052",
+    "CART-2026-001133"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "lifecycle:cart_event_order",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:decision_row_iff_flagged",
+   "violations": 0,
+   "checked": 50000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:one_order_per_cart",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:message_only_for_targeted_cart",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "lifecycle:max_2_messages_per_cart",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:message_customer==cart_customer",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:message_template_step/channel",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:message_id_format",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:campaign_template_bridge",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:order_session_in_cart_sessions",
+   "violations": 0,
+   "checked": 34084,
+   "note": "purchasing session must be a session of the cart",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "consent:timeline_contiguous",
+   "violations": 0,
+   "checked": 35098,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "consent:no_send_without_opt_in",
+   "violations": 44,
+   "checked": 10000,
+   "note": "messages sent to a channel in opt_out state",
+   "sample": [
+    "SEND-2026-000133",
+    "SEND-2026-000146",
+    "SEND-2026-000166"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "consent:evidence_matches_timeline",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "consent:suppressions_justified",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "suppression:frequency_cap_1_per_24h_3_per_7d",
+   "violations": 0,
+   "checked": 4022,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "suppression:purchased_before_send_never_sent",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "suppression:sms_quiet_hours",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "join:delivery_status_iff_sent",
+   "violations": 0,
+   "checked": 10000,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "attribution:one_per_order",
+   "violations": 8,
+   "checked": 403,
+   "note": "orders credited more than once",
+   "sample": [
+    "ORD-2026-001589",
+    "ORD-2026-004290",
+    "ORD-2026-014906"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "attribution:matches_deterministic_rule",
+   "violations": 0,
+   "checked": 34084,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "attribution:within_window",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "attribution:backed_by_click_event",
+   "violations": 8,
+   "checked": 411,
+   "note": "",
+   "sample": [
+    "ATT-2026-000404",
+    "ATT-2026-000405",
+    "ATT-2026-000406"
+   ],
+   "status": "FLAGGED"
+  },
+  {
+   "check": "attribution:fields_consistent",
+   "violations": 0,
+   "checked": 411,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:attempts=sent+suppressed",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:sent=delivered+bounced",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:clicks<=sent & orders<=clicks",
+   "violations": 0,
+   "checked": 120,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:campaign_revenue_sum==attribution_sum",
+   "violations": 0,
+   "checked": 1,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:attributed_revenue<=total_order_revenue",
+   "violations": 0,
+   "checked": 1,
+   "note": "",
+   "sample": [],
+   "status": "PASS"
+  },
+  {
+   "check": "reconcile:naive_vs_dedup_attributed_revenue",
+   "violations": 1,
+   "checked": 1,
+   "note": "naive credited revenue exceeds de-duplicated",
+   "sample": [
+    "double-count $751.70"
+   ],
+   "status": "FLAGGED"
+  }
+ ],
+ "acceptance": {
+  "consent_and_suppression_enforced": true,
+  "abandonment_time_based": true,
+  "attribution_deterministic": true,
+  "metrics_reconcile": true,
+  "all_unflagged_checks_clean": true,
+  "all_injected_anomalies_detected_exactly": true
+ }
+}

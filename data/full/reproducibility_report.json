@@ -1,0 +1,219 @@
+{
+ "seed": 20261022,
+ "scale": "full",
+ "files_compared": 26,
+ "identical": true,
+ "differing_files": [],
+ "run1": {
+  "README.md": {
+   "sha256": "76a25b37cc670561b1e30f843fa0da4b99b784b5f14b341da9a9e20de17e1eb1",
+   "rows": null
+  },
+  "abandonment_decisions.csv": {
+   "sha256": "18ae7c1145135021e983b8f0548be097cbc6465cd0590a66a7e4480c5d4507b4",
+   "rows": 20060
+  },
+  "attributions.csv": {
+   "sha256": "bcf78677620c2dbb1417990d3d75a575991230dee9bdf9b385a2fc64932be221",
+   "rows": 411
+  },
+  "campaign_templates.csv": {
+   "sha256": "d0c2ff86489ffe267e0366703fd93f23b2e27c2d5c1c3c08a9b098ecaa7ef36d",
+   "rows": 240
+  },
+  "campaigns.csv": {
+   "sha256": "fc8714cb2cf63b73d1214699cfd7064317518a3ae0a002e7c8042795d7a60c90",
+   "rows": 120
+  },
+  "cart_events.csv": {
+   "sha256": "973dc81e9161abd827f4613285701d8cc730e437d1d0e2d21fff852366a08843",
+   "rows": 259597
+  },
+  "cart_lines.csv": {
+   "sha256": "5f19095f7279254087f028a8818a896951c0d215c059e2e92ceb2e9d4ae60e46",
+   "rows": 106013
+  },
+  "cart_sessions.csv": {
+   "sha256": "6252b10606beecb80993762a70e0624841d507489f68d831501202775d9214cc",
+   "rows": 60043
+  },
+  "carts.csv": {
+   "sha256": "62459c3dd8aaba54924314b372c8fd495722ea43c224272ad8257ab1e1569c23",
+   "rows": 50000
+  },
+  "consents.csv": {
+   "sha256": "da3dbd826c21d79db50ff1a98269c5a488fef780f4ef992f329469905dcdb586",
+   "rows": 37464
+  },
+  "customers.csv": {
+   "sha256": "f642cc73ecc976d50193d8aede881257e9880b35a5f480053df8f0c342db4be5",
+   "rows": 20000
+  },
+  "data_dictionary.json": {
+   "sha256": "1c4fa031a0a436ae75cada193888b7e1e6da82638a13cb44c7fcd6254e21e77e",
+   "rows": null
+  },
+  "data_dictionary.md": {
+   "sha256": "72b951b999e0f7e8c305bb836d28aa8a43ad61d6e2da60af404c77149a6c0e33",
+   "rows": null
+  },
+  "ground_truth/expected_labels.csv": {
+   "sha256": "3503abd05f54739fe8803a20c2bcf29444358fc09e298822ec7ee9387a81e33f",
+   "rows": 212252
+  },
+  "ground_truth/ground_truth.csv": {
+   "sha256": "90fe2f121bb1ec75279d7c48d099505853736a076f1c346b3ddfa38cd6b94a87",
+   "rows": 516
+  },
+  "ground_truth/ground_truth.json": {
+   "sha256": "82e1005098638f69797f6bfb4d2f448e3e2ec191713a99fc35490cd47d35b220",
+   "rows": null
+  },
+  "message_templates.csv": {
+   "sha256": "8f249f6547e93240eb4f07553f21fc73e24aada2a49ba0346934863327a1b506",
+   "rows": 6
+  },
+  "orders.csv": {
+   "sha256": "e7d88ff7a939c7c4ba84012d97947e59125d03a247b25f367fab0258eaf0e89e",
+   "rows": 34084
+  },
+  "products.csv": {
+   "sha256": "48840878124423835ce2378f247c92d591388cfa6a4dabdee56810c82a357c5e",
+   "rows": 80
+  },
+  "scheduled_messages.csv": {
+   "sha256": "bfe08e6afd5db98e98ba8c30965b7a2a80423e34a7849234c797475fadd081ea",
+   "rows": 10000
+  },
+  "schema.sql": {
+   "sha256": "784855b695e24c303307aeb59fc9d5906ee0c4fadebb36151fd7e411402f0c56",
+   "rows": null
+  },
+  "seed.sql": {
+   "sha256": "ec756d1105ce159f3abe7b6480d4aa1008a253ccc260087ee127f33d850387c1",
+   "rows": null
+  },
+  "send_attempts.csv": {
+   "sha256": "b04429fdf5496d50b7bb90b04045f8213bea5e9d6d408daeb68bd18ece498c5b",
+   "rows": 10000
+  },
+  "send_events.csv": {
+   "sha256": "5ae7c667f555c961b3e6763bea7504453f5544c1ea2b6e9cad406c1a6062d860",
+   "rows": 10693
+  },
+  "sessions.csv": {
+   "sha256": "4949a526ad2f8c876f34dd7ac458097209c22b9d05b85c9da4459c60bfd8bf4b",
+   "rows": 60043
+  },
+  "source_manifest.json": {
+   "sha256": "553490187754b36e0f90f9c6218c9808b7780783e3104bc379ef95f34002a875",
+   "rows": null
+  }
+ },
+ "run2": {
+  "README.md": {
+   "sha256": "76a25b37cc670561b1e30f843fa0da4b99b784b5f14b341da9a9e20de17e1eb1",
+   "rows": null
+  },
+  "abandonment_decisions.csv": {
+   "sha256": "18ae7c1145135021e983b8f0548be097cbc6465cd0590a66a7e4480c5d4507b4",
+   "rows": 20060
+  },
+  "attributions.csv": {
+   "sha256": "bcf78677620c2dbb1417990d3d75a575991230dee9bdf9b385a2fc64932be221",
+   "rows": 411
+  },
+  "campaign_templates.csv": {
+   "sha256": "d0c2ff86489ffe267e0366703fd93f23b2e27c2d5c1c3c08a9b098ecaa7ef36d",
+   "rows": 240
+  },
+  "campaigns.csv": {
+   "sha256": "fc8714cb2cf63b73d1214699cfd7064317518a3ae0a002e7c8042795d7a60c90",
+   "rows": 120
+  },
+  "cart_events.csv": {
+   "sha256": "973dc81e9161abd827f4613285701d8cc730e437d1d0e2d21fff852366a08843",
+   "rows": 259597
+  },
+  "cart_lines.csv": {
+   "sha256": "5f19095f7279254087f028a8818a896951c0d215c059e2e92ceb2e9d4ae60e46",
+   "rows": 106013
+  },
+  "cart_sessions.csv": {
+   "sha256": "6252b10606beecb80993762a70e0624841d507489f68d831501202775d9214cc",
+   "rows": 60043
+  },
+  "carts.csv": {
+   "sha256": "62459c3dd8aaba54924314b372c8fd495722ea43c224272ad8257ab1e1569c23",
+   "rows": 50000
+  },
+  "consents.csv": {
+   "sha256": "da3dbd826c21d79db50ff1a98269c5a488fef780f4ef992f329469905dcdb586",
+   "rows": 37464
+  },
+  "customers.csv": {
+   "sha256": "f642cc73ecc976d50193d8aede881257e9880b35a5f480053df8f0c342db4be5",
+   "rows": 20000
+  },
+  "data_dictionary.json": {
+   "sha256": "1c4fa031a0a436ae75cada193888b7e1e6da82638a13cb44c7fcd6254e21e77e",
+   "rows": null
+  },
+  "data_dictionary.md": {
+   "sha256": "72b951b999e0f7e8c305bb836d28aa8a43ad61d6e2da60af404c77149a6c0e33",
+   "rows": null
+  },
+  "ground_truth/expected_labels.csv": {
+   "sha256": "3503abd05f54739fe8803a20c2bcf29444358fc09e298822ec7ee9387a81e33f",
+   "rows": 212252
+  },
+  "ground_truth/ground_truth.csv": {
+   "sha256": "90fe2f121bb1ec75279d7c48d099505853736a076f1c346b3ddfa38cd6b94a87",
+   "rows": 516
+  },
+  "ground_truth/ground_truth.json": {
+   "sha256": "82e1005098638f69797f6bfb4d2f448e3e2ec191713a99fc35490cd47d35b220",
+   "rows": null
+  },
+  "message_templates.csv": {
+   "sha256": "8f249f6547e93240eb4f07553f21fc73e24aada2a49ba0346934863327a1b506",
+   "rows": 6
+  },
+  "orders.csv": {
+   "sha256": "e7d88ff7a939c7c4ba84012d97947e59125d03a247b25f367fab0258eaf0e89e",
+   "rows": 34084
+  },
+  "products.csv": {
+   "sha256": "48840878124423835ce2378f247c92d591388cfa6a4dabdee56810c82a357c5e",
+   "rows": 80
+  },
+  "scheduled_messages.csv": {
+   "sha256": "bfe08e6afd5db98e98ba8c30965b7a2a80423e34a7849234c797475fadd081ea",
+   "rows": 10000
+  },
+  "schema.sql": {
+   "sha256": "784855b695e24c303307aeb59fc9d5906ee0c4fadebb36151fd7e411402f0c56",
+   "rows": null
+  },
+  "seed.sql": {
+   "sha256": "ec756d1105ce159f3abe7b6480d4aa1008a253ccc260087ee127f33d850387c1",
+   "rows": null
+  },
+  "send_attempts.csv": {
+   "sha256": "b04429fdf5496d50b7bb90b04045f8213bea5e9d6d408daeb68bd18ece498c5b",
+   "rows": 10000
+  },
+  "send_events.csv": {
+   "sha256": "5ae7c667f555c961b3e6763bea7504453f5544c1ea2b6e9cad406c1a6062d860",
+   "rows": 10693
+  },
+  "sessions.csv": {
+   "sha256": "4949a526ad2f8c876f34dd7ac458097209c22b9d05b85c9da4459c60bfd8bf4b",
+   "rows": 60043
+  },
+  "source_manifest.json": {
+   "sha256": "553490187754b36e0f90f9c6218c9808b7780783e3104bc379ef95f34002a875",
+   "rows": null
+  }
+ }
+}

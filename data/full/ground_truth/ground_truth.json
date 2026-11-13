@@ -1,0 +1,5162 @@
+[
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000404",
+  "related_entity_id": "ATT-2026-000146",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-014906 credited to campaigns CMP-2026-000053 and CMP-2026-000050",
+  "gt_id": "GT-000001"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000405",
+  "related_entity_id": "ATT-2026-000390",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-032901 credited to campaigns CMP-2026-000116 and CMP-2026-000113",
+  "gt_id": "GT-000002"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000406",
+  "related_entity_id": "ATT-2026-000047",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-004290 credited to campaigns CMP-2026-000018 and CMP-2026-000014",
+  "gt_id": "GT-000003"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000407",
+  "related_entity_id": "ATT-2026-000295",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-026741 credited to campaigns CMP-2026-000094 and CMP-2026-000092",
+  "gt_id": "GT-000004"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000408",
+  "related_entity_id": "ATT-2026-000188",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-017195 credited to campaigns CMP-2026-000061 and CMP-2026-000058",
+  "gt_id": "GT-000005"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000409",
+  "related_entity_id": "ATT-2026-000360",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-031131 credited to campaigns CMP-2026-000111 and CMP-2026-000107",
+  "gt_id": "GT-000006"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000410",
+  "related_entity_id": "ATT-2026-000019",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-001589 credited to campaigns CMP-2026-000007 and CMP-2026-000005",
+  "gt_id": "GT-000007"
+ },
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000411",
+  "related_entity_id": "ATT-2026-000255",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-024007 credited to campaigns CMP-2026-000079 and CMP-2026-000083",
+  "gt_id": "GT-000008"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000268",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000009"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000286",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000010"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000318",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000011"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000551",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000012"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000720",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000013"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000774",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000014"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000857",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000015"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001109",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000016"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001321",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000017"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001518",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000018"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001693",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000019"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001747",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000020"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001925",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000021"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002150",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000022"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002442",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000023"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002500",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000024"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002512",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000025"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002648",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000026"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002683",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000027"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003160",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000028"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003224",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000029"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003495",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000030"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003718",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000031"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-004135",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000032"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-004460",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000033"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005026",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000034"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005234",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000035"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005384",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000036"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005693",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000037"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005749",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000038"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005767",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000039"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005831",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000040"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006058",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000041"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006182",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000042"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006335",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000043"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006381",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000044"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006465",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000045"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006609",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000046"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006741",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000047"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006743",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000048"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006913",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000049"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007030",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000050"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007058",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000051"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007184",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000052"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007424",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000053"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007620",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000054"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007811",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000055"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007835",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000056"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007895",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000057"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007965",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000058"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008011",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000059"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008151",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000060"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008164",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000061"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008261",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000062"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008693",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000063"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008884",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000064"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009066",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000065"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009715",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000066"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009920",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000067"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009957",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000068"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009987",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000069"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010379",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000070"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010666",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000071"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010708",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000072"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010717",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000073"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010885",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000074"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011049",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000075"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011263",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000076"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011420",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000077"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011461",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000078"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011465",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000079"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011655",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000080"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011663",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000081"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011681",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000082"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011849",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000083"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012179",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000084"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012225",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000085"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012370",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000086"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012659",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000087"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012758",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000088"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012850",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000089"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013062",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000090"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013211",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000091"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013249",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000092"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013470",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000093"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013490",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000094"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013593",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000095"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013789",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000096"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-014640",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000097"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-014661",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000098"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-014775",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000099"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015193",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000100"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015205",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000101"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015320",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000102"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015361",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000103"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015844",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000104"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016201",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000105"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016209",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000106"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016266",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000107"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016325",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000108"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016559",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000109"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016645",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000110"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016773",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000111"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016800",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000112"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017081",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000113"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017415",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000114"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017513",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000115"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017562",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000116"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017597",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000117"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017653",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000118"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017753",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000119"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018196",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000120"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018197",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000121"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018270",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000122"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018347",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000123"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018480",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000124"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018585",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000125"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018834",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000126"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018919",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000127"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019021",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000128"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019057",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000129"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019060",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000130"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019438",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000131"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019694",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000132"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019835",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000133"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019841",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000134"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020068",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000135"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020309",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000136"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020618",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000137"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020622",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000138"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020741",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000139"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020787",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000140"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020912",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000141"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021035",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000142"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021092",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000143"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021538",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000144"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021541",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000145"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021543",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000146"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021728",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000147"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021945",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000148"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021977",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000149"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022186",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000150"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022517",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000151"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022529",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000152"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022592",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000153"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022647",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000154"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022653",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000155"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022697",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000156"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022865",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000157"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022968",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000158"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-023520",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000159"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-023539",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000160"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-023807",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000161"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-023895",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000162"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-023994",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000163"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024022",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000164"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024154",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000165"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024287",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000166"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024592",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000167"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024701",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000168"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-024964",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000169"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025082",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000170"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025091",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000171"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025153",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000172"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025348",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000173"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025397",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000174"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025416",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000175"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025461",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000176"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025657",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000177"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025830",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000178"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026016",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000179"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026230",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000180"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026253",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000181"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026274",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000182"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026361",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000183"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026518",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000184"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026829",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000185"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026862",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000186"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026875",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000187"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027199",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000188"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027214",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000189"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027225",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000190"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027523",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000191"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027567",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000192"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027601",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000193"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027632",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000194"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027658",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000195"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027747",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000196"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027777",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000197"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027873",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000198"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029121",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000199"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029193",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000200"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029399",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000201"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029586",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000202"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029635",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000203"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029711",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000204"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029764",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000205"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029767",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000206"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029842",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000207"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029845",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000208"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029868",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000209"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-030634",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000210"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-030849",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000211"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-030912",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000212"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031065",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000213"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031173",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000214"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031554",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000215"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031848",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000216"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031993",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000217"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032013",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000218"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032203",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000219"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032246",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000220"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032276",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000221"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032345",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000222"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032473",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000223"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032566",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000224"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032719",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000225"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033088",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000226"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033154",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000227"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033239",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000228"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033658",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000229"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033729",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000230"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034335",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000231"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034376",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000232"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034633",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000233"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034690",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000234"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034776",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000235"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035110",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000236"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035245",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000237"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035247",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000238"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035429",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000239"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035470",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000240"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035485",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000241"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035597",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000242"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035903",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000243"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036028",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000244"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036098",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000245"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036101",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000246"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036143",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000247"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036207",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000248"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036741",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000249"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036814",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000250"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036975",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000251"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037243",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000252"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037509",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000253"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037654",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000254"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037852",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000255"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037968",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000256"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038272",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000257"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038361",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000258"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038432",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000259"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038479",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000260"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038498",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000261"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038583",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000262"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038690",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000263"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038949",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000264"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039273",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000265"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039318",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000266"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039436",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000267"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039447",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000268"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039571",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000269"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040148",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000270"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040191",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000271"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040272",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000272"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040436",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000273"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040482",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000274"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040745",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000275"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040825",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000276"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040916",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000277"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-041103",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000278"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-041504",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000279"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-041838",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000280"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042108",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000281"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042124",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000282"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042145",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000283"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042158",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000284"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042279",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000285"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042378",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000286"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042553",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000287"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042731",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000288"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043432",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000289"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043444",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000290"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043739",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000291"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043782",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000292"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043849",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000293"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044337",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000294"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044383",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000295"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044453",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000296"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044727",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000297"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044820",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000298"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044902",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000299"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045056",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000300"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045163",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000301"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045167",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000302"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045213",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000303"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045231",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000304"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045744",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000305"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045754",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000306"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045797",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000307"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045851",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000308"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046087",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000309"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046179",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000310"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046259",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000311"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046623",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000312"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046685",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000313"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046713",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000314"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046977",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000315"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047245",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000316"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047364",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000317"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047463",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000318"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047565",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000319"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047718",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000320"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048069",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000321"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048125",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000322"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048137",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000323"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048146",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000324"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048177",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000325"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048250",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000326"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048280",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000327"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048732",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000328"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049154",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000329"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049380",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000330"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049524",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000331"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049568",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000332"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049828",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000333"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049831",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000334"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049879",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000335"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049885",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000336"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049995",
+  "related_entity_id": "",
+  "expected_value": "abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000337"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000581",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000338"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001052",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000339"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001133",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000340"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001289",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000341"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003033",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000342"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003444",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000343"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005399",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000344"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005421",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000345"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006001",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000346"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006843",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000347"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006875",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000348"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007698",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000349"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007833",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000350"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008039",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000351"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008567",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000352"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008807",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000353"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011381",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000354"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011722",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000355"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011967",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000356"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-013489",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000357"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-014846",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000358"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015040",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000359"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017600",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000360"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-017868",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000361"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018156",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000362"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019035",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000363"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019824",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000364"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020154",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000365"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022040",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000366"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022993",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000367"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-025706",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000368"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-026664",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000369"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027761",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000370"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032686",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000371"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-032698",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000372"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-033447",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000373"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034825",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000374"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034979",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000375"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035307",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000376"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036274",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000377"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037984",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000378"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038105",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000379"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039422",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000380"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039489",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000381"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040080",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000382"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040593",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000383"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042330",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000384"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044118",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000385"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044611",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000386"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044684",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000387"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044898",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000388"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045194",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000389"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046455",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000390"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046773",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000391"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047490",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000392"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048259",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000393"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048345",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000394"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049142",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000395"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049767",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000396"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049900",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000397"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000894",
+  "related_entity_id": "",
+  "expected_value": "320.31",
+  "observed_value": "272.49",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000398"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001060",
+  "related_entity_id": "",
+  "expected_value": "348.75",
+  "observed_value": "139.50",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000399"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001248",
+  "related_entity_id": "",
+  "expected_value": "435.08",
+  "observed_value": "320.34",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000400"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001322",
+  "related_entity_id": "",
+  "expected_value": "309.53",
+  "observed_value": "284.81",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000401"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002279",
+  "related_entity_id": "",
+  "expected_value": "413.33",
+  "observed_value": "204.08",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000402"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-002766",
+  "related_entity_id": "",
+  "expected_value": "212.70",
+  "observed_value": "181.98",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000403"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-003463",
+  "related_entity_id": "",
+  "expected_value": "46.08",
+  "observed_value": "15.36",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000404"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005281",
+  "related_entity_id": "",
+  "expected_value": "49.44",
+  "observed_value": "24.72",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000405"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-005535",
+  "related_entity_id": "",
+  "expected_value": "94.28",
+  "observed_value": "47.14",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000406"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006209",
+  "related_entity_id": "",
+  "expected_value": "60.14",
+  "observed_value": "30.07",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000407"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006623",
+  "related_entity_id": "",
+  "expected_value": "401.36",
+  "observed_value": "178.28",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000408"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-006868",
+  "related_entity_id": "",
+  "expected_value": "134.68",
+  "observed_value": "91.18",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000409"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007315",
+  "related_entity_id": "",
+  "expected_value": "450.90",
+  "observed_value": "343.10",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000410"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-007703",
+  "related_entity_id": "",
+  "expected_value": "400.55",
+  "observed_value": "354.11",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000411"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-008191",
+  "related_entity_id": "",
+  "expected_value": "130.53",
+  "observed_value": "43.51",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000412"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-009522",
+  "related_entity_id": "",
+  "expected_value": "466.92",
+  "observed_value": "116.73",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000413"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-010950",
+  "related_entity_id": "",
+  "expected_value": "265.80",
+  "observed_value": "199.35",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000414"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011033",
+  "related_entity_id": "",
+  "expected_value": "61.44",
+  "observed_value": "15.36",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000415"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011372",
+  "related_entity_id": "",
+  "expected_value": "122.45",
+  "observed_value": "272.90",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000416"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-011931",
+  "related_entity_id": "",
+  "expected_value": "504.69",
+  "observed_value": "363.75",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000417"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-012125",
+  "related_entity_id": "",
+  "expected_value": "34.60",
+  "observed_value": "17.30",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000418"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-014734",
+  "related_entity_id": "",
+  "expected_value": "267.80",
+  "observed_value": "218.36",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000419"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-015297",
+  "related_entity_id": "",
+  "expected_value": "161.70",
+  "observed_value": "53.90",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000420"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-016578",
+  "related_entity_id": "",
+  "expected_value": "303.03",
+  "observed_value": "203.55",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000421"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018520",
+  "related_entity_id": "",
+  "expected_value": "72.36",
+  "observed_value": "36.18",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000422"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018660",
+  "related_entity_id": "",
+  "expected_value": "200.60",
+  "observed_value": "50.15",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000423"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-018737",
+  "related_entity_id": "",
+  "expected_value": "163.48",
+  "observed_value": "40.87",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000424"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019036",
+  "related_entity_id": "",
+  "expected_value": "52.86",
+  "observed_value": "89.04",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000425"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-019300",
+  "related_entity_id": "",
+  "expected_value": "126.03",
+  "observed_value": "203.73",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000426"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-020488",
+  "related_entity_id": "",
+  "expected_value": "235.02",
+  "observed_value": "225.96",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000427"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021271",
+  "related_entity_id": "",
+  "expected_value": "142.10",
+  "observed_value": "71.05",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000428"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021389",
+  "related_entity_id": "",
+  "expected_value": "350.01",
+  "observed_value": "182.57",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000429"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-021622",
+  "related_entity_id": "",
+  "expected_value": "120.88",
+  "observed_value": "82.19",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000430"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022412",
+  "related_entity_id": "",
+  "expected_value": "767.29",
+  "observed_value": "652.81",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000431"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-022944",
+  "related_entity_id": "",
+  "expected_value": "282.61",
+  "observed_value": "218.80",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000432"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-027833",
+  "related_entity_id": "",
+  "expected_value": "256.80",
+  "observed_value": "218.00",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000433"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-028650",
+  "related_entity_id": "",
+  "expected_value": "226.40",
+  "observed_value": "142.68",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000434"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-028748",
+  "related_entity_id": "",
+  "expected_value": "168.73",
+  "observed_value": "184.84",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000435"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-028754",
+  "related_entity_id": "",
+  "expected_value": "370.74",
+  "observed_value": "185.37",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000436"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029031",
+  "related_entity_id": "",
+  "expected_value": "229.48",
+  "observed_value": "114.74",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000437"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029390",
+  "related_entity_id": "",
+  "expected_value": "8.62",
+  "observed_value": "25.86",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000438"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029563",
+  "related_entity_id": "",
+  "expected_value": "11.67",
+  "observed_value": "23.34",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000439"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029618",
+  "related_entity_id": "",
+  "expected_value": "75.01",
+  "observed_value": "29.77",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000440"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029757",
+  "related_entity_id": "",
+  "expected_value": "222.00",
+  "observed_value": "163.80",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000441"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029867",
+  "related_entity_id": "",
+  "expected_value": "172.11",
+  "observed_value": "114.74",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000442"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-029888",
+  "related_entity_id": "",
+  "expected_value": "19.28",
+  "observed_value": "38.56",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000443"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-030506",
+  "related_entity_id": "",
+  "expected_value": "211.89",
+  "observed_value": "149.73",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000444"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-030739",
+  "related_entity_id": "",
+  "expected_value": "346.88",
+  "observed_value": "255.40",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000445"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031379",
+  "related_entity_id": "",
+  "expected_value": "46.15",
+  "observed_value": "9.23",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000446"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031581",
+  "related_entity_id": "",
+  "expected_value": "100.43",
+  "observed_value": "77.09",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000447"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-031713",
+  "related_entity_id": "",
+  "expected_value": "411.45",
+  "observed_value": "399.84",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000448"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034170",
+  "related_entity_id": "",
+  "expected_value": "110.55",
+  "observed_value": "22.11",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000449"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034400",
+  "related_entity_id": "",
+  "expected_value": "93.65",
+  "observed_value": "71.90",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000450"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-034559",
+  "related_entity_id": "",
+  "expected_value": "150.35",
+  "observed_value": "30.07",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000451"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035089",
+  "related_entity_id": "",
+  "expected_value": "213.19",
+  "observed_value": "114.31",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000452"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-035325",
+  "related_entity_id": "",
+  "expected_value": "85.02",
+  "observed_value": "28.34",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000453"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036259",
+  "related_entity_id": "",
+  "expected_value": "290.46",
+  "observed_value": "251.16",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000454"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-036545",
+  "related_entity_id": "",
+  "expected_value": "17.98",
+  "observed_value": "35.96",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000455"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-037870",
+  "related_entity_id": "",
+  "expected_value": "215.21",
+  "observed_value": "382.65",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000456"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038586",
+  "related_entity_id": "",
+  "expected_value": "286.12",
+  "observed_value": "240.38",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000457"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-038936",
+  "related_entity_id": "",
+  "expected_value": "299.19",
+  "observed_value": "167.49",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000458"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039146",
+  "related_entity_id": "",
+  "expected_value": "156.21",
+  "observed_value": "168.66",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000459"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-039658",
+  "related_entity_id": "",
+  "expected_value": "102.48",
+  "observed_value": "68.55",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000460"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-040064",
+  "related_entity_id": "",
+  "expected_value": "216.59",
+  "observed_value": "168.22",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000461"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042507",
+  "related_entity_id": "",
+  "expected_value": "51.34",
+  "observed_value": "19.30",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000462"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-042948",
+  "related_entity_id": "",
+  "expected_value": "252.75",
+  "observed_value": "208.02",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000463"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043464",
+  "related_entity_id": "",
+  "expected_value": "56.55",
+  "observed_value": "11.31",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000464"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-043768",
+  "related_entity_id": "",
+  "expected_value": "216.90",
+  "observed_value": "72.30",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000465"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-044166",
+  "related_entity_id": "",
+  "expected_value": "161.13",
+  "observed_value": "76.11",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000466"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-045656",
+  "related_entity_id": "",
+  "expected_value": "18.72",
+  "observed_value": "6.24",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000467"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-046623",
+  "related_entity_id": "",
+  "expected_value": "59.35",
+  "observed_value": "11.87",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000468"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-047649",
+  "related_entity_id": "",
+  "expected_value": "313.28",
+  "observed_value": "277.67",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000469"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048006",
+  "related_entity_id": "",
+  "expected_value": "114.63",
+  "observed_value": "75.94",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000470"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-048924",
+  "related_entity_id": "",
+  "expected_value": "396.04",
+  "observed_value": "182.89",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000471"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-049807",
+  "related_entity_id": "",
+  "expected_value": "196.50",
+  "observed_value": "117.90",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000472"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000133",
+  "related_entity_id": "CON-006407",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000473"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000146",
+  "related_entity_id": "CON-021696",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000474"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000166",
+  "related_entity_id": "CON-000337",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000475"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000172",
+  "related_entity_id": "CON-016541",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000476"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000193",
+  "related_entity_id": "CON-019593",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000477"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000315",
+  "related_entity_id": "CON-014842",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000478"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000348",
+  "related_entity_id": "CON-008429",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000479"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000431",
+  "related_entity_id": "CON-006249",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000480"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000565",
+  "related_entity_id": "CON-000356",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000481"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000649",
+  "related_entity_id": "CON-012864",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000482"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000653",
+  "related_entity_id": "CON-000363",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000483"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000680",
+  "related_entity_id": "CON-009048",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000484"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000714",
+  "related_entity_id": "CON-002124",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000485"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000893",
+  "related_entity_id": "CON-000574",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000486"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000916",
+  "related_entity_id": "CON-019157",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000487"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000938",
+  "related_entity_id": "CON-000133",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000488"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000999",
+  "related_entity_id": "CON-010733",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000489"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001075",
+  "related_entity_id": "CON-003302",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000490"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001101",
+  "related_entity_id": "CON-004736",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000491"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001159",
+  "related_entity_id": "CON-002767",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000492"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001208",
+  "related_entity_id": "CON-005510",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000493"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001449",
+  "related_entity_id": "CON-012166",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000494"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001498",
+  "related_entity_id": "CON-004421",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000495"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001669",
+  "related_entity_id": "CON-000011",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000496"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001679",
+  "related_entity_id": "CON-005344",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000497"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001744",
+  "related_entity_id": "CON-000124",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000498"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001884",
+  "related_entity_id": "CON-000046",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000499"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001909",
+  "related_entity_id": "CON-009117",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000500"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001963",
+  "related_entity_id": "CON-000343",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000501"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-001988",
+  "related_entity_id": "CON-006407",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000502"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002022",
+  "related_entity_id": "CON-001841",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000503"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002042",
+  "related_entity_id": "CON-018977",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000504"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002043",
+  "related_entity_id": "CON-002351",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000505"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002098",
+  "related_entity_id": "CON-008229",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000506"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002221",
+  "related_entity_id": "CON-000657",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000507"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002266",
+  "related_entity_id": "CON-015951",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000508"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002303",
+  "related_entity_id": "CON-014467",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000509"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002305",
+  "related_entity_id": "CON-005093",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000510"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002324",
+  "related_entity_id": "CON-000944",
+  "expected_value": "suppressed_consent_withdrawn",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000511"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002402",
+  "related_entity_id": "CON-010134",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000512"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002433",
+  "related_entity_id": "CON-000414",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000513"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002512",
+  "related_entity_id": "CON-000414",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000514"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002553",
+  "related_entity_id": "CON-005824",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000515"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-002595",
+  "related_entity_id": "CON-000064",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000516"
+ }
+]

@@ -1,0 +1,82 @@
+"""
+Domain enumerations for CartRecover-AI.
+Enforces strict allowed values for entity state lifecycles and business classifications.
+"""
+from enum import Enum
+
+class CustomerSegment(str, Enum):
+    VIP = "VIP"
+    REGULAR = "REGULAR"
+    NEW = "NEW"
+    INACTIVE = "INACTIVE"
+
+class ConsentChannel(str, Enum):
+    EMAIL = "EMAIL"
+    SMS = "SMS"
+
+class ConsentStatus(str, Enum):
+    OPTED_IN = "OPTED_IN"
+    OPTED_OUT = "OPTED_OUT"
+
+class ConsentSource(str, Enum):
+    CHECKOUT_FORM = "CHECKOUT_FORM"
+    ACCOUNT_SETTINGS = "ACCOUNT_SETTINGS"
+    PREFERENCE_CENTER = "PREFERENCE_CENTER"
+    UNSUBSCRIBE_LINK = "UNSUBSCRIBE_LINK"
+
+class DeviceType(str, Enum):
+    DESKTOP = "DESKTOP"
+    MOBILE = "MOBILE"
+    TABLET = "TABLET"
+
+class CartStatus(str, Enum):
+    ACTIVE = "ACTIVE"
+    ABANDONED = "ABANDONED"
+    CHECKOUT_STARTED = "CHECKOUT_STARTED"
+    CONVERTED = "CONVERTED"
+    EXPIRED = "EXPIRED"
+
+class ProductCategory(str, Enum):
+    APPAREL = "APPAREL"
+    ELECTRONICS = "ELECTRONICS"
+    HOME_GOODS = "HOME_GOODS"
+    BEAUTY = "BEAUTY"
+    SPORTS = "SPORTS"
+
+class CampaignVariant(str, Enum):
+    HIGH_VALUE_VIP = "HIGH_VALUE_VIP"
+    FREE_SHIPPING = "FREE_SHIPPING"
+    URGENCY_NUDGE = "URGENCY_NUDGE"
+    STANDARD_REMINDER = "STANDARD_REMINDER"
+
+class SendStatus(str, Enum):
+    SCHEDULED = "SCHEDULED"
+    SENT = "SENT"
+    DELIVERED = "DELIVERED"
+    OPENED = "OPENED"
+    CLICKED = "CLICKED"
+    SUPPRESSED_NO_CONSENT = "SUPPRESSED_NO_CONSENT"
+    SUPPRESSED_FREQ_CAP = "SUPPRESSED_FREQ_CAP"
+    FAILED = "FAILED"
+
+class SuppressionReason(str, Enum):
+    NO_ACTIVE_CONSENT = "NO_ACTIVE_CONSENT"
+    OPTED_OUT_RECENTLY = "OPTED_OUT_RECENTLY"
+    FREQUENCY_CAP_EXCEEDED_24H = "FREQUENCY_CAP_EXCEEDED_24H"
+    CART_ALREADY_PURCHASED = "CART_ALREADY_PURCHASED"
+
+class OrderStatus(str, Enum):
+    COMPLETED = "COMPLETED"
+    PENDING = "PENDING"
+    CANCELLED = "CANCELLED"
+
+class AttributionModel(str, Enum):
+    LAST_TOUCH_7D = "LAST_TOUCH_7D"
+    FIRST_TOUCH_7D = "FIRST_TOUCH_7D"
+    LINEAR_TOUCH = "LINEAR_TOUCH"
+
+class AnomalyType(str, Enum):
+    COMPLIANCE_OPT_OUT_VIOLATION = "COMPLIANCE_OPT_OUT_VIOLATION"
+    POST_PURCHASE_ABANDONMENT_ERROR = "POST_PURCHASE_ABANDONMENT_ERROR"
+    ATTRIBUTION_DOUBLE_COUNTING = "ATTRIBUTION_DOUBLE_COUNTING"
+    STALE_CART_TOTAL_MISMATCH = "STALE_CART_TOTAL_MISMATCH"

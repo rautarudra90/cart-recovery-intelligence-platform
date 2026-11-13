@@ -1,0 +1,517 @@
+gt_id,issue_type,entity_type,entity_id,related_entity_id,expected_value,observed_value,description
+GT-000001,attribution_double_counted_across_campaigns,attribution,ATT-2026-000404,ATT-2026-000146,1 attribution per order,2 attributions,order ORD-2026-014906 credited to campaigns CMP-2026-000053 and CMP-2026-000050
+GT-000002,attribution_double_counted_across_campaigns,attribution,ATT-2026-000405,ATT-2026-000390,1 attribution per order,2 attributions,order ORD-2026-032901 credited to campaigns CMP-2026-000116 and CMP-2026-000113
+GT-000003,attribution_double_counted_across_campaigns,attribution,ATT-2026-000406,ATT-2026-000047,1 attribution per order,2 attributions,order ORD-2026-004290 credited to campaigns CMP-2026-000018 and CMP-2026-000014
+GT-000004,attribution_double_counted_across_campaigns,attribution,ATT-2026-000407,ATT-2026-000295,1 attribution per order,2 attributions,order ORD-2026-026741 credited to campaigns CMP-2026-000094 and CMP-2026-000092
+GT-000005,attribution_double_counted_across_campaigns,attribution,ATT-2026-000408,ATT-2026-000188,1 attribution per order,2 attributions,order ORD-2026-017195 credited to campaigns CMP-2026-000061 and CMP-2026-000058
+GT-000006,attribution_double_counted_across_campaigns,attribution,ATT-2026-000409,ATT-2026-000360,1 attribution per order,2 attributions,order ORD-2026-031131 credited to campaigns CMP-2026-000111 and CMP-2026-000107
+GT-000007,attribution_double_counted_across_campaigns,attribution,ATT-2026-000410,ATT-2026-000019,1 attribution per order,2 attributions,order ORD-2026-001589 credited to campaigns CMP-2026-000007 and CMP-2026-000005
+GT-000008,attribution_double_counted_across_campaigns,attribution,ATT-2026-000411,ATT-2026-000255,1 attribution per order,2 attributions,order ORD-2026-024007 credited to campaigns CMP-2026-000079 and CMP-2026-000083
+GT-000009,boundary_abandonment_window,cart,CART-2026-000268,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000010,boundary_abandonment_window,cart,CART-2026-000286,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000011,boundary_abandonment_window,cart,CART-2026-000318,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000012,boundary_abandonment_window,cart,CART-2026-000551,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000013,boundary_abandonment_window,cart,CART-2026-000720,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000014,boundary_abandonment_window,cart,CART-2026-000774,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000015,boundary_abandonment_window,cart,CART-2026-000857,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000016,boundary_abandonment_window,cart,CART-2026-001109,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000017,boundary_abandonment_window,cart,CART-2026-001321,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000018,boundary_abandonment_window,cart,CART-2026-001518,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000019,boundary_abandonment_window,cart,CART-2026-001693,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000020,boundary_abandonment_window,cart,CART-2026-001747,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000021,boundary_abandonment_window,cart,CART-2026-001925,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000022,boundary_abandonment_window,cart,CART-2026-002150,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000023,boundary_abandonment_window,cart,CART-2026-002442,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000024,boundary_abandonment_window,cart,CART-2026-002500,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000025,boundary_abandonment_window,cart,CART-2026-002512,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000026,boundary_abandonment_window,cart,CART-2026-002648,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000027,boundary_abandonment_window,cart,CART-2026-002683,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000028,boundary_abandonment_window,cart,CART-2026-003160,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000029,boundary_abandonment_window,cart,CART-2026-003224,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000030,boundary_abandonment_window,cart,CART-2026-003495,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000031,boundary_abandonment_window,cart,CART-2026-003718,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000032,boundary_abandonment_window,cart,CART-2026-004135,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000033,boundary_abandonment_window,cart,CART-2026-004460,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000034,boundary_abandonment_window,cart,CART-2026-005026,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000035,boundary_abandonment_window,cart,CART-2026-005234,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000036,boundary_abandonment_window,cart,CART-2026-005384,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000037,boundary_abandonment_window,cart,CART-2026-005693,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000038,boundary_abandonment_window,cart,CART-2026-005749,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000039,boundary_abandonment_window,cart,CART-2026-005767,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000040,boundary_abandonment_window,cart,CART-2026-005831,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000041,boundary_abandonment_window,cart,CART-2026-006058,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000042,boundary_abandonment_window,cart,CART-2026-006182,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000043,boundary_abandonment_window,cart,CART-2026-006335,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000044,boundary_abandonment_window,cart,CART-2026-006381,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000045,boundary_abandonment_window,cart,CART-2026-006465,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000046,boundary_abandonment_window,cart,CART-2026-006609,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000047,boundary_abandonment_window,cart,CART-2026-006741,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000048,boundary_abandonment_window,cart,CART-2026-006743,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000049,boundary_abandonment_window,cart,CART-2026-006913,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000050,boundary_abandonment_window,cart,CART-2026-007030,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000051,boundary_abandonment_window,cart,CART-2026-007058,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000052,boundary_abandonment_window,cart,CART-2026-007184,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000053,boundary_abandonment_window,cart,CART-2026-007424,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000054,boundary_abandonment_window,cart,CART-2026-007620,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000055,boundary_abandonment_window,cart,CART-2026-007811,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000056,boundary_abandonment_window,cart,CART-2026-007835,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000057,boundary_abandonment_window,cart,CART-2026-007895,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000058,boundary_abandonment_window,cart,CART-2026-007965,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000059,boundary_abandonment_window,cart,CART-2026-008011,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000060,boundary_abandonment_window,cart,CART-2026-008151,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000061,boundary_abandonment_window,cart,CART-2026-008164,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000062,boundary_abandonment_window,cart,CART-2026-008261,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000063,boundary_abandonment_window,cart,CART-2026-008693,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000064,boundary_abandonment_window,cart,CART-2026-008884,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000065,boundary_abandonment_window,cart,CART-2026-009066,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000066,boundary_abandonment_window,cart,CART-2026-009715,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000067,boundary_abandonment_window,cart,CART-2026-009920,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000068,boundary_abandonment_window,cart,CART-2026-009957,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000069,boundary_abandonment_window,cart,CART-2026-009987,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000070,boundary_abandonment_window,cart,CART-2026-010379,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000071,boundary_abandonment_window,cart,CART-2026-010666,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000072,boundary_abandonment_window,cart,CART-2026-010708,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000073,boundary_abandonment_window,cart,CART-2026-010717,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000074,boundary_abandonment_window,cart,CART-2026-010885,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000075,boundary_abandonment_window,cart,CART-2026-011049,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000076,boundary_abandonment_window,cart,CART-2026-011263,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000077,boundary_abandonment_window,cart,CART-2026-011420,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000078,boundary_abandonment_window,cart,CART-2026-011461,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000079,boundary_abandonment_window,cart,CART-2026-011465,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000080,boundary_abandonment_window,cart,CART-2026-011655,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000081,boundary_abandonment_window,cart,CART-2026-011663,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000082,boundary_abandonment_window,cart,CART-2026-011681,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000083,boundary_abandonment_window,cart,CART-2026-011849,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000084,boundary_abandonment_window,cart,CART-2026-012179,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000085,boundary_abandonment_window,cart,CART-2026-012225,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000086,boundary_abandonment_window,cart,CART-2026-012370,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000087,boundary_abandonment_window,cart,CART-2026-012659,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000088,boundary_abandonment_window,cart,CART-2026-012758,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000089,boundary_abandonment_window,cart,CART-2026-012850,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000090,boundary_abandonment_window,cart,CART-2026-013062,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000091,boundary_abandonment_window,cart,CART-2026-013211,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000092,boundary_abandonment_window,cart,CART-2026-013249,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000093,boundary_abandonment_window,cart,CART-2026-013470,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000094,boundary_abandonment_window,cart,CART-2026-013490,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000095,boundary_abandonment_window,cart,CART-2026-013593,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000096,boundary_abandonment_window,cart,CART-2026-013789,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000097,boundary_abandonment_window,cart,CART-2026-014640,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000098,boundary_abandonment_window,cart,CART-2026-014661,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000099,boundary_abandonment_window,cart,CART-2026-014775,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000100,boundary_abandonment_window,cart,CART-2026-015193,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000101,boundary_abandonment_window,cart,CART-2026-015205,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000102,boundary_abandonment_window,cart,CART-2026-015320,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000103,boundary_abandonment_window,cart,CART-2026-015361,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000104,boundary_abandonment_window,cart,CART-2026-015844,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000105,boundary_abandonment_window,cart,CART-2026-016201,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000106,boundary_abandonment_window,cart,CART-2026-016209,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000107,boundary_abandonment_window,cart,CART-2026-016266,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000108,boundary_abandonment_window,cart,CART-2026-016325,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000109,boundary_abandonment_window,cart,CART-2026-016559,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000110,boundary_abandonment_window,cart,CART-2026-016645,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000111,boundary_abandonment_window,cart,CART-2026-016773,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000112,boundary_abandonment_window,cart,CART-2026-016800,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000113,boundary_abandonment_window,cart,CART-2026-017081,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000114,boundary_abandonment_window,cart,CART-2026-017415,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000115,boundary_abandonment_window,cart,CART-2026-017513,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000116,boundary_abandonment_window,cart,CART-2026-017562,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000117,boundary_abandonment_window,cart,CART-2026-017597,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000118,boundary_abandonment_window,cart,CART-2026-017653,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000119,boundary_abandonment_window,cart,CART-2026-017753,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000120,boundary_abandonment_window,cart,CART-2026-018196,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000121,boundary_abandonment_window,cart,CART-2026-018197,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000122,boundary_abandonment_window,cart,CART-2026-018270,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000123,boundary_abandonment_window,cart,CART-2026-018347,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000124,boundary_abandonment_window,cart,CART-2026-018480,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000125,boundary_abandonment_window,cart,CART-2026-018585,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000126,boundary_abandonment_window,cart,CART-2026-018834,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000127,boundary_abandonment_window,cart,CART-2026-018919,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000128,boundary_abandonment_window,cart,CART-2026-019021,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000129,boundary_abandonment_window,cart,CART-2026-019057,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000130,boundary_abandonment_window,cart,CART-2026-019060,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000131,boundary_abandonment_window,cart,CART-2026-019438,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000132,boundary_abandonment_window,cart,CART-2026-019694,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000133,boundary_abandonment_window,cart,CART-2026-019835,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000134,boundary_abandonment_window,cart,CART-2026-019841,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000135,boundary_abandonment_window,cart,CART-2026-020068,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000136,boundary_abandonment_window,cart,CART-2026-020309,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000137,boundary_abandonment_window,cart,CART-2026-020618,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000138,boundary_abandonment_window,cart,CART-2026-020622,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000139,boundary_abandonment_window,cart,CART-2026-020741,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000140,boundary_abandonment_window,cart,CART-2026-020787,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000141,boundary_abandonment_window,cart,CART-2026-020912,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000142,boundary_abandonment_window,cart,CART-2026-021035,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000143,boundary_abandonment_window,cart,CART-2026-021092,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000144,boundary_abandonment_window,cart,CART-2026-021538,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000145,boundary_abandonment_window,cart,CART-2026-021541,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000146,boundary_abandonment_window,cart,CART-2026-021543,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000147,boundary_abandonment_window,cart,CART-2026-021728,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000148,boundary_abandonment_window,cart,CART-2026-021945,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000149,boundary_abandonment_window,cart,CART-2026-021977,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000150,boundary_abandonment_window,cart,CART-2026-022186,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000151,boundary_abandonment_window,cart,CART-2026-022517,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000152,boundary_abandonment_window,cart,CART-2026-022529,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000153,boundary_abandonment_window,cart,CART-2026-022592,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000154,boundary_abandonment_window,cart,CART-2026-022647,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000155,boundary_abandonment_window,cart,CART-2026-022653,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000156,boundary_abandonment_window,cart,CART-2026-022697,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000157,boundary_abandonment_window,cart,CART-2026-022865,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000158,boundary_abandonment_window,cart,CART-2026-022968,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000159,boundary_abandonment_window,cart,CART-2026-023520,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000160,boundary_abandonment_window,cart,CART-2026-023539,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000161,boundary_abandonment_window,cart,CART-2026-023807,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000162,boundary_abandonment_window,cart,CART-2026-023895,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000163,boundary_abandonment_window,cart,CART-2026-023994,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000164,boundary_abandonment_window,cart,CART-2026-024022,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000165,boundary_abandonment_window,cart,CART-2026-024154,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000166,boundary_abandonment_window,cart,CART-2026-024287,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000167,boundary_abandonment_window,cart,CART-2026-024592,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000168,boundary_abandonment_window,cart,CART-2026-024701,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000169,boundary_abandonment_window,cart,CART-2026-024964,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000170,boundary_abandonment_window,cart,CART-2026-025082,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000171,boundary_abandonment_window,cart,CART-2026-025091,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000172,boundary_abandonment_window,cart,CART-2026-025153,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000173,boundary_abandonment_window,cart,CART-2026-025348,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000174,boundary_abandonment_window,cart,CART-2026-025397,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000175,boundary_abandonment_window,cart,CART-2026-025416,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000176,boundary_abandonment_window,cart,CART-2026-025461,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000177,boundary_abandonment_window,cart,CART-2026-025657,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000178,boundary_abandonment_window,cart,CART-2026-025830,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000179,boundary_abandonment_window,cart,CART-2026-026016,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000180,boundary_abandonment_window,cart,CART-2026-026230,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000181,boundary_abandonment_window,cart,CART-2026-026253,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000182,boundary_abandonment_window,cart,CART-2026-026274,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000183,boundary_abandonment_window,cart,CART-2026-026361,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000184,boundary_abandonment_window,cart,CART-2026-026518,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000185,boundary_abandonment_window,cart,CART-2026-026829,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000186,boundary_abandonment_window,cart,CART-2026-026862,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000187,boundary_abandonment_window,cart,CART-2026-026875,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000188,boundary_abandonment_window,cart,CART-2026-027199,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000189,boundary_abandonment_window,cart,CART-2026-027214,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000190,boundary_abandonment_window,cart,CART-2026-027225,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000191,boundary_abandonment_window,cart,CART-2026-027523,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000192,boundary_abandonment_window,cart,CART-2026-027567,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000193,boundary_abandonment_window,cart,CART-2026-027601,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000194,boundary_abandonment_window,cart,CART-2026-027632,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000195,boundary_abandonment_window,cart,CART-2026-027658,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000196,boundary_abandonment_window,cart,CART-2026-027747,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000197,boundary_abandonment_window,cart,CART-2026-027777,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000198,boundary_abandonment_window,cart,CART-2026-027873,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000199,boundary_abandonment_window,cart,CART-2026-029121,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000200,boundary_abandonment_window,cart,CART-2026-029193,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000201,boundary_abandonment_window,cart,CART-2026-029399,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000202,boundary_abandonment_window,cart,CART-2026-029586,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000203,boundary_abandonment_window,cart,CART-2026-029635,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000204,boundary_abandonment_window,cart,CART-2026-029711,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000205,boundary_abandonment_window,cart,CART-2026-029764,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000206,boundary_abandonment_window,cart,CART-2026-029767,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000207,boundary_abandonment_window,cart,CART-2026-029842,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000208,boundary_abandonment_window,cart,CART-2026-029845,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000209,boundary_abandonment_window,cart,CART-2026-029868,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000210,boundary_abandonment_window,cart,CART-2026-030634,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000211,boundary_abandonment_window,cart,CART-2026-030849,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000212,boundary_abandonment_window,cart,CART-2026-030912,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000213,boundary_abandonment_window,cart,CART-2026-031065,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000214,boundary_abandonment_window,cart,CART-2026-031173,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000215,boundary_abandonment_window,cart,CART-2026-031554,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000216,boundary_abandonment_window,cart,CART-2026-031848,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000217,boundary_abandonment_window,cart,CART-2026-031993,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000218,boundary_abandonment_window,cart,CART-2026-032013,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000219,boundary_abandonment_window,cart,CART-2026-032203,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000220,boundary_abandonment_window,cart,CART-2026-032246,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000221,boundary_abandonment_window,cart,CART-2026-032276,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000222,boundary_abandonment_window,cart,CART-2026-032345,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000223,boundary_abandonment_window,cart,CART-2026-032473,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000224,boundary_abandonment_window,cart,CART-2026-032566,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000225,boundary_abandonment_window,cart,CART-2026-032719,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000226,boundary_abandonment_window,cart,CART-2026-033088,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000227,boundary_abandonment_window,cart,CART-2026-033154,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000228,boundary_abandonment_window,cart,CART-2026-033239,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000229,boundary_abandonment_window,cart,CART-2026-033658,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000230,boundary_abandonment_window,cart,CART-2026-033729,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000231,boundary_abandonment_window,cart,CART-2026-034335,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000232,boundary_abandonment_window,cart,CART-2026-034376,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000233,boundary_abandonment_window,cart,CART-2026-034633,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000234,boundary_abandonment_window,cart,CART-2026-034690,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000235,boundary_abandonment_window,cart,CART-2026-034776,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000236,boundary_abandonment_window,cart,CART-2026-035110,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000237,boundary_abandonment_window,cart,CART-2026-035245,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000238,boundary_abandonment_window,cart,CART-2026-035247,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000239,boundary_abandonment_window,cart,CART-2026-035429,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000240,boundary_abandonment_window,cart,CART-2026-035470,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000241,boundary_abandonment_window,cart,CART-2026-035485,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000242,boundary_abandonment_window,cart,CART-2026-035597,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000243,boundary_abandonment_window,cart,CART-2026-035903,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000244,boundary_abandonment_window,cart,CART-2026-036028,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000245,boundary_abandonment_window,cart,CART-2026-036098,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000246,boundary_abandonment_window,cart,CART-2026-036101,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000247,boundary_abandonment_window,cart,CART-2026-036143,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000248,boundary_abandonment_window,cart,CART-2026-036207,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000249,boundary_abandonment_window,cart,CART-2026-036741,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000250,boundary_abandonment_window,cart,CART-2026-036814,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000251,boundary_abandonment_window,cart,CART-2026-036975,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000252,boundary_abandonment_window,cart,CART-2026-037243,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000253,boundary_abandonment_window,cart,CART-2026-037509,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000254,boundary_abandonment_window,cart,CART-2026-037654,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000255,boundary_abandonment_window,cart,CART-2026-037852,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000256,boundary_abandonment_window,cart,CART-2026-037968,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000257,boundary_abandonment_window,cart,CART-2026-038272,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000258,boundary_abandonment_window,cart,CART-2026-038361,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000259,boundary_abandonment_window,cart,CART-2026-038432,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000260,boundary_abandonment_window,cart,CART-2026-038479,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000261,boundary_abandonment_window,cart,CART-2026-038498,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000262,boundary_abandonment_window,cart,CART-2026-038583,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000263,boundary_abandonment_window,cart,CART-2026-038690,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000264,boundary_abandonment_window,cart,CART-2026-038949,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000265,boundary_abandonment_window,cart,CART-2026-039273,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000266,boundary_abandonment_window,cart,CART-2026-039318,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000267,boundary_abandonment_window,cart,CART-2026-039436,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000268,boundary_abandonment_window,cart,CART-2026-039447,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000269,boundary_abandonment_window,cart,CART-2026-039571,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000270,boundary_abandonment_window,cart,CART-2026-040148,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000271,boundary_abandonment_window,cart,CART-2026-040191,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000272,boundary_abandonment_window,cart,CART-2026-040272,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000273,boundary_abandonment_window,cart,CART-2026-040436,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000274,boundary_abandonment_window,cart,CART-2026-040482,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000275,boundary_abandonment_window,cart,CART-2026-040745,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000276,boundary_abandonment_window,cart,CART-2026-040825,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000277,boundary_abandonment_window,cart,CART-2026-040916,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000278,boundary_abandonment_window,cart,CART-2026-041103,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000279,boundary_abandonment_window,cart,CART-2026-041504,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000280,boundary_abandonment_window,cart,CART-2026-041838,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000281,boundary_abandonment_window,cart,CART-2026-042108,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000282,boundary_abandonment_window,cart,CART-2026-042124,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000283,boundary_abandonment_window,cart,CART-2026-042145,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000284,boundary_abandonment_window,cart,CART-2026-042158,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000285,boundary_abandonment_window,cart,CART-2026-042279,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000286,boundary_abandonment_window,cart,CART-2026-042378,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000287,boundary_abandonment_window,cart,CART-2026-042553,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000288,boundary_abandonment_window,cart,CART-2026-042731,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000289,boundary_abandonment_window,cart,CART-2026-043432,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000290,boundary_abandonment_window,cart,CART-2026-043444,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000291,boundary_abandonment_window,cart,CART-2026-043739,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000292,boundary_abandonment_window,cart,CART-2026-043782,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000293,boundary_abandonment_window,cart,CART-2026-043849,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000294,boundary_abandonment_window,cart,CART-2026-044337,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000295,boundary_abandonment_window,cart,CART-2026-044383,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000296,boundary_abandonment_window,cart,CART-2026-044453,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000297,boundary_abandonment_window,cart,CART-2026-044727,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000298,boundary_abandonment_window,cart,CART-2026-044820,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000299,boundary_abandonment_window,cart,CART-2026-044902,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000300,boundary_abandonment_window,cart,CART-2026-045056,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000301,boundary_abandonment_window,cart,CART-2026-045163,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000302,boundary_abandonment_window,cart,CART-2026-045167,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000303,boundary_abandonment_window,cart,CART-2026-045213,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000304,boundary_abandonment_window,cart,CART-2026-045231,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000305,boundary_abandonment_window,cart,CART-2026-045744,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000306,boundary_abandonment_window,cart,CART-2026-045754,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000307,boundary_abandonment_window,cart,CART-2026-045797,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000308,boundary_abandonment_window,cart,CART-2026-045851,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000309,boundary_abandonment_window,cart,CART-2026-046087,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000310,boundary_abandonment_window,cart,CART-2026-046179,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000311,boundary_abandonment_window,cart,CART-2026-046259,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000312,boundary_abandonment_window,cart,CART-2026-046623,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000313,boundary_abandonment_window,cart,CART-2026-046685,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000314,boundary_abandonment_window,cart,CART-2026-046713,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000315,boundary_abandonment_window,cart,CART-2026-046977,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000316,boundary_abandonment_window,cart,CART-2026-047245,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000317,boundary_abandonment_window,cart,CART-2026-047364,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000318,boundary_abandonment_window,cart,CART-2026-047463,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000319,boundary_abandonment_window,cart,CART-2026-047565,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000320,boundary_abandonment_window,cart,CART-2026-047718,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000321,boundary_abandonment_window,cart,CART-2026-048069,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000322,boundary_abandonment_window,cart,CART-2026-048125,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000323,boundary_abandonment_window,cart,CART-2026-048137,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000324,boundary_abandonment_window,cart,CART-2026-048146,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000325,boundary_abandonment_window,cart,CART-2026-048177,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000326,boundary_abandonment_window,cart,CART-2026-048250,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000327,boundary_abandonment_window,cart,CART-2026-048280,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000328,boundary_abandonment_window,cart,CART-2026-048732,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000329,boundary_abandonment_window,cart,CART-2026-049154,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000330,boundary_abandonment_window,cart,CART-2026-049380,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000331,boundary_abandonment_window,cart,CART-2026-049524,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000332,boundary_abandonment_window,cart,CART-2026-049568,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000333,boundary_abandonment_window,cart,CART-2026-049828,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000334,boundary_abandonment_window,cart,CART-2026-049831,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000335,boundary_abandonment_window,cart,CART-2026-049879,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000336,boundary_abandonment_window,cart,CART-2026-049885,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000337,boundary_abandonment_window,cart,CART-2026-049995,,abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000338,cart_abandoned_after_purchase,cart,CART-2026-000581,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000339,cart_abandoned_after_purchase,cart,CART-2026-001052,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000340,cart_abandoned_after_purchase,cart,CART-2026-001133,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000341,cart_abandoned_after_purchase,cart,CART-2026-001289,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000342,cart_abandoned_after_purchase,cart,CART-2026-003033,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000343,cart_abandoned_after_purchase,cart,CART-2026-003444,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000344,cart_abandoned_after_purchase,cart,CART-2026-005399,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000345,cart_abandoned_after_purchase,cart,CART-2026-005421,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000346,cart_abandoned_after_purchase,cart,CART-2026-006001,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000347,cart_abandoned_after_purchase,cart,CART-2026-006843,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000348,cart_abandoned_after_purchase,cart,CART-2026-006875,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000349,cart_abandoned_after_purchase,cart,CART-2026-007698,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000350,cart_abandoned_after_purchase,cart,CART-2026-007833,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000351,cart_abandoned_after_purchase,cart,CART-2026-008039,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000352,cart_abandoned_after_purchase,cart,CART-2026-008567,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000353,cart_abandoned_after_purchase,cart,CART-2026-008807,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000354,cart_abandoned_after_purchase,cart,CART-2026-011381,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000355,cart_abandoned_after_purchase,cart,CART-2026-011722,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000356,cart_abandoned_after_purchase,cart,CART-2026-011967,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000357,cart_abandoned_after_purchase,cart,CART-2026-013489,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000358,cart_abandoned_after_purchase,cart,CART-2026-014846,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000359,cart_abandoned_after_purchase,cart,CART-2026-015040,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000360,cart_abandoned_after_purchase,cart,CART-2026-017600,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000361,cart_abandoned_after_purchase,cart,CART-2026-017868,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000362,cart_abandoned_after_purchase,cart,CART-2026-018156,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000363,cart_abandoned_after_purchase,cart,CART-2026-019035,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000364,cart_abandoned_after_purchase,cart,CART-2026-019824,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000365,cart_abandoned_after_purchase,cart,CART-2026-020154,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000366,cart_abandoned_after_purchase,cart,CART-2026-022040,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000367,cart_abandoned_after_purchase,cart,CART-2026-022993,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000368,cart_abandoned_after_purchase,cart,CART-2026-025706,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000369,cart_abandoned_after_purchase,cart,CART-2026-026664,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000370,cart_abandoned_after_purchase,cart,CART-2026-027761,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000371,cart_abandoned_after_purchase,cart,CART-2026-032686,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000372,cart_abandoned_after_purchase,cart,CART-2026-032698,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000373,cart_abandoned_after_purchase,cart,CART-2026-033447,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000374,cart_abandoned_after_purchase,cart,CART-2026-034825,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000375,cart_abandoned_after_purchase,cart,CART-2026-034979,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000376,cart_abandoned_after_purchase,cart,CART-2026-035307,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000377,cart_abandoned_after_purchase,cart,CART-2026-036274,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000378,cart_abandoned_after_purchase,cart,CART-2026-037984,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000379,cart_abandoned_after_purchase,cart,CART-2026-038105,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000380,cart_abandoned_after_purchase,cart,CART-2026-039422,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000381,cart_abandoned_after_purchase,cart,CART-2026-039489,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000382,cart_abandoned_after_purchase,cart,CART-2026-040080,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000383,cart_abandoned_after_purchase,cart,CART-2026-040593,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000384,cart_abandoned_after_purchase,cart,CART-2026-042330,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000385,cart_abandoned_after_purchase,cart,CART-2026-044118,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000386,cart_abandoned_after_purchase,cart,CART-2026-044611,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000387,cart_abandoned_after_purchase,cart,CART-2026-044684,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000388,cart_abandoned_after_purchase,cart,CART-2026-044898,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000389,cart_abandoned_after_purchase,cart,CART-2026-045194,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000390,cart_abandoned_after_purchase,cart,CART-2026-046455,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000391,cart_abandoned_after_purchase,cart,CART-2026-046773,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000392,cart_abandoned_after_purchase,cart,CART-2026-047490,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000393,cart_abandoned_after_purchase,cart,CART-2026-048259,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000394,cart_abandoned_after_purchase,cart,CART-2026-048345,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000395,cart_abandoned_after_purchase,cart,CART-2026-049142,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000396,cart_abandoned_after_purchase,cart,CART-2026-049767,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000397,cart_abandoned_after_purchase,cart,CART-2026-049900,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000398,cart_total_stale_after_quantity_update,cart,CART-2026-000894,,320.31,272.49,cart_total kept pre-update value after quantity_updated event
+GT-000399,cart_total_stale_after_quantity_update,cart,CART-2026-001060,,348.75,139.50,cart_total kept pre-update value after quantity_updated event
+GT-000400,cart_total_stale_after_quantity_update,cart,CART-2026-001248,,435.08,320.34,cart_total kept pre-update value after quantity_updated event
+GT-000401,cart_total_stale_after_quantity_update,cart,CART-2026-001322,,309.53,284.81,cart_total kept pre-update value after quantity_updated event
+GT-000402,cart_total_stale_after_quantity_update,cart,CART-2026-002279,,413.33,204.08,cart_total kept pre-update value after quantity_updated event
+GT-000403,cart_total_stale_after_quantity_update,cart,CART-2026-002766,,212.70,181.98,cart_total kept pre-update value after quantity_updated event
+GT-000404,cart_total_stale_after_quantity_update,cart,CART-2026-003463,,46.08,15.36,cart_total kept pre-update value after quantity_updated event
+GT-000405,cart_total_stale_after_quantity_update,cart,CART-2026-005281,,49.44,24.72,cart_total kept pre-update value after quantity_updated event
+GT-000406,cart_total_stale_after_quantity_update,cart,CART-2026-005535,,94.28,47.14,cart_total kept pre-update value after quantity_updated event
+GT-000407,cart_total_stale_after_quantity_update,cart,CART-2026-006209,,60.14,30.07,cart_total kept pre-update value after quantity_updated event
+GT-000408,cart_total_stale_after_quantity_update,cart,CART-2026-006623,,401.36,178.28,cart_total kept pre-update value after quantity_updated event
+GT-000409,cart_total_stale_after_quantity_update,cart,CART-2026-006868,,134.68,91.18,cart_total kept pre-update value after quantity_updated event
+GT-000410,cart_total_stale_after_quantity_update,cart,CART-2026-007315,,450.90,343.10,cart_total kept pre-update value after quantity_updated event
+GT-000411,cart_total_stale_after_quantity_update,cart,CART-2026-007703,,400.55,354.11,cart_total kept pre-update value after quantity_updated event
+GT-000412,cart_total_stale_after_quantity_update,cart,CART-2026-008191,,130.53,43.51,cart_total kept pre-update value after quantity_updated event
+GT-000413,cart_total_stale_after_quantity_update,cart,CART-2026-009522,,466.92,116.73,cart_total kept pre-update value after quantity_updated event
+GT-000414,cart_total_stale_after_quantity_update,cart,CART-2026-010950,,265.80,199.35,cart_total kept pre-update value after quantity_updated event
+GT-000415,cart_total_stale_after_quantity_update,cart,CART-2026-011033,,61.44,15.36,cart_total kept pre-update value after quantity_updated event
+GT-000416,cart_total_stale_after_quantity_update,cart,CART-2026-011372,,122.45,272.90,cart_total kept pre-update value after quantity_updated event
+GT-000417,cart_total_stale_after_quantity_update,cart,CART-2026-011931,,504.69,363.75,cart_total kept pre-update value after quantity_updated event
+GT-000418,cart_total_stale_after_quantity_update,cart,CART-2026-012125,,34.60,17.30,cart_total kept pre-update value after quantity_updated event
+GT-000419,cart_total_stale_after_quantity_update,cart,CART-2026-014734,,267.80,218.36,cart_total kept pre-update value after quantity_updated event
+GT-000420,cart_total_stale_after_quantity_update,cart,CART-2026-015297,,161.70,53.90,cart_total kept pre-update value after quantity_updated event
+GT-000421,cart_total_stale_after_quantity_update,cart,CART-2026-016578,,303.03,203.55,cart_total kept pre-update value after quantity_updated event
+GT-000422,cart_total_stale_after_quantity_update,cart,CART-2026-018520,,72.36,36.18,cart_total kept pre-update value after quantity_updated event
+GT-000423,cart_total_stale_after_quantity_update,cart,CART-2026-018660,,200.60,50.15,cart_total kept pre-update value after quantity_updated event
+GT-000424,cart_total_stale_after_quantity_update,cart,CART-2026-018737,,163.48,40.87,cart_total kept pre-update value after quantity_updated event
+GT-000425,cart_total_stale_after_quantity_update,cart,CART-2026-019036,,52.86,89.04,cart_total kept pre-update value after quantity_updated event
+GT-000426,cart_total_stale_after_quantity_update,cart,CART-2026-019300,,126.03,203.73,cart_total kept pre-update value after quantity_updated event
+GT-000427,cart_total_stale_after_quantity_update,cart,CART-2026-020488,,235.02,225.96,cart_total kept pre-update value after quantity_updated event
+GT-000428,cart_total_stale_after_quantity_update,cart,CART-2026-021271,,142.10,71.05,cart_total kept pre-update value after quantity_updated event
+GT-000429,cart_total_stale_after_quantity_update,cart,CART-2026-021389,,350.01,182.57,cart_total kept pre-update value after quantity_updated event
+GT-000430,cart_total_stale_after_quantity_update,cart,CART-2026-021622,,120.88,82.19,cart_total kept pre-update value after quantity_updated event
+GT-000431,cart_total_stale_after_quantity_update,cart,CART-2026-022412,,767.29,652.81,cart_total kept pre-update value after quantity_updated event
+GT-000432,cart_total_stale_after_quantity_update,cart,CART-2026-022944,,282.61,218.80,cart_total kept pre-update value after quantity_updated event
+GT-000433,cart_total_stale_after_quantity_update,cart,CART-2026-027833,,256.80,218.00,cart_total kept pre-update value after quantity_updated event
+GT-000434,cart_total_stale_after_quantity_update,cart,CART-2026-028650,,226.40,142.68,cart_total kept pre-update value after quantity_updated event
+GT-000435,cart_total_stale_after_quantity_update,cart,CART-2026-028748,,168.73,184.84,cart_total kept pre-update value after quantity_updated event
+GT-000436,cart_total_stale_after_quantity_update,cart,CART-2026-028754,,370.74,185.37,cart_total kept pre-update value after quantity_updated event
+GT-000437,cart_total_stale_after_quantity_update,cart,CART-2026-029031,,229.48,114.74,cart_total kept pre-update value after quantity_updated event
+GT-000438,cart_total_stale_after_quantity_update,cart,CART-2026-029390,,8.62,25.86,cart_total kept pre-update value after quantity_updated event
+GT-000439,cart_total_stale_after_quantity_update,cart,CART-2026-029563,,11.67,23.34,cart_total kept pre-update value after quantity_updated event
+GT-000440,cart_total_stale_after_quantity_update,cart,CART-2026-029618,,75.01,29.77,cart_total kept pre-update value after quantity_updated event
+GT-000441,cart_total_stale_after_quantity_update,cart,CART-2026-029757,,222.00,163.80,cart_total kept pre-update value after quantity_updated event
+GT-000442,cart_total_stale_after_quantity_update,cart,CART-2026-029867,,172.11,114.74,cart_total kept pre-update value after quantity_updated event
+GT-000443,cart_total_stale_after_quantity_update,cart,CART-2026-029888,,19.28,38.56,cart_total kept pre-update value after quantity_updated event
+GT-000444,cart_total_stale_after_quantity_update,cart,CART-2026-030506,,211.89,149.73,cart_total kept pre-update value after quantity_updated event
+GT-000445,cart_total_stale_after_quantity_update,cart,CART-2026-030739,,346.88,255.40,cart_total kept pre-update value after quantity_updated event
+GT-000446,cart_total_stale_after_quantity_update,cart,CART-2026-031379,,46.15,9.23,cart_total kept pre-update value after quantity_updated event
+GT-000447,cart_total_stale_after_quantity_update,cart,CART-2026-031581,,100.43,77.09,cart_total kept pre-update value after quantity_updated event
+GT-000448,cart_total_stale_after_quantity_update,cart,CART-2026-031713,,411.45,399.84,cart_total kept pre-update value after quantity_updated event
+GT-000449,cart_total_stale_after_quantity_update,cart,CART-2026-034170,,110.55,22.11,cart_total kept pre-update value after quantity_updated event
+GT-000450,cart_total_stale_after_quantity_update,cart,CART-2026-034400,,93.65,71.90,cart_total kept pre-update value after quantity_updated event
+GT-000451,cart_total_stale_after_quantity_update,cart,CART-2026-034559,,150.35,30.07,cart_total kept pre-update value after quantity_updated event
+GT-000452,cart_total_stale_after_quantity_update,cart,CART-2026-035089,,213.19,114.31,cart_total kept pre-update value after quantity_updated event
+GT-000453,cart_total_stale_after_quantity_update,cart,CART-2026-035325,,85.02,28.34,cart_total kept pre-update value after quantity_updated event
+GT-000454,cart_total_stale_after_quantity_update,cart,CART-2026-036259,,290.46,251.16,cart_total kept pre-update value after quantity_updated event
+GT-000455,cart_total_stale_after_quantity_update,cart,CART-2026-036545,,17.98,35.96,cart_total kept pre-update value after quantity_updated event
+GT-000456,cart_total_stale_after_quantity_update,cart,CART-2026-037870,,215.21,382.65,cart_total kept pre-update value after quantity_updated event
+GT-000457,cart_total_stale_after_quantity_update,cart,CART-2026-038586,,286.12,240.38,cart_total kept pre-update value after quantity_updated event
+GT-000458,cart_total_stale_after_quantity_update,cart,CART-2026-038936,,299.19,167.49,cart_total kept pre-update value after quantity_updated event
+GT-000459,cart_total_stale_after_quantity_update,cart,CART-2026-039146,,156.21,168.66,cart_total kept pre-update value after quantity_updated event
+GT-000460,cart_total_stale_after_quantity_update,cart,CART-2026-039658,,102.48,68.55,cart_total kept pre-update value after quantity_updated event
+GT-000461,cart_total_stale_after_quantity_update,cart,CART-2026-040064,,216.59,168.22,cart_total kept pre-update value after quantity_updated event
+GT-000462,cart_total_stale_after_quantity_update,cart,CART-2026-042507,,51.34,19.30,cart_total kept pre-update value after quantity_updated event
+GT-000463,cart_total_stale_after_quantity_update,cart,CART-2026-042948,,252.75,208.02,cart_total kept pre-update value after quantity_updated event
+GT-000464,cart_total_stale_after_quantity_update,cart,CART-2026-043464,,56.55,11.31,cart_total kept pre-update value after quantity_updated event
+GT-000465,cart_total_stale_after_quantity_update,cart,CART-2026-043768,,216.90,72.30,cart_total kept pre-update value after quantity_updated event
+GT-000466,cart_total_stale_after_quantity_update,cart,CART-2026-044166,,161.13,76.11,cart_total kept pre-update value after quantity_updated event
+GT-000467,cart_total_stale_after_quantity_update,cart,CART-2026-045656,,18.72,6.24,cart_total kept pre-update value after quantity_updated event
+GT-000468,cart_total_stale_after_quantity_update,cart,CART-2026-046623,,59.35,11.87,cart_total kept pre-update value after quantity_updated event
+GT-000469,cart_total_stale_after_quantity_update,cart,CART-2026-047649,,313.28,277.67,cart_total kept pre-update value after quantity_updated event
+GT-000470,cart_total_stale_after_quantity_update,cart,CART-2026-048006,,114.63,75.94,cart_total kept pre-update value after quantity_updated event
+GT-000471,cart_total_stale_after_quantity_update,cart,CART-2026-048924,,396.04,182.89,cart_total kept pre-update value after quantity_updated event
+GT-000472,cart_total_stale_after_quantity_update,cart,CART-2026-049807,,196.50,117.90,cart_total kept pre-update value after quantity_updated event
+GT-000473,message_sent_after_optout,send_attempt,SEND-2026-000133,CON-006407,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000474,message_sent_after_optout,send_attempt,SEND-2026-000146,CON-021696,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000475,message_sent_after_optout,send_attempt,SEND-2026-000166,CON-000337,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000476,message_sent_after_optout,send_attempt,SEND-2026-000172,CON-016541,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000477,message_sent_after_optout,send_attempt,SEND-2026-000193,CON-019593,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000478,message_sent_after_optout,send_attempt,SEND-2026-000315,CON-014842,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000479,message_sent_after_optout,send_attempt,SEND-2026-000348,CON-008429,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000480,message_sent_after_optout,send_attempt,SEND-2026-000431,CON-006249,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000481,message_sent_after_optout,send_attempt,SEND-2026-000565,CON-000356,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000482,message_sent_after_optout,send_attempt,SEND-2026-000649,CON-012864,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000483,message_sent_after_optout,send_attempt,SEND-2026-000653,CON-000363,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000484,message_sent_after_optout,send_attempt,SEND-2026-000680,CON-009048,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000485,message_sent_after_optout,send_attempt,SEND-2026-000714,CON-002124,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000486,message_sent_after_optout,send_attempt,SEND-2026-000893,CON-000574,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000487,message_sent_after_optout,send_attempt,SEND-2026-000916,CON-019157,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000488,message_sent_after_optout,send_attempt,SEND-2026-000938,CON-000133,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000489,message_sent_after_optout,send_attempt,SEND-2026-000999,CON-010733,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000490,message_sent_after_optout,send_attempt,SEND-2026-001075,CON-003302,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000491,message_sent_after_optout,send_attempt,SEND-2026-001101,CON-004736,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000492,message_sent_after_optout,send_attempt,SEND-2026-001159,CON-002767,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000493,message_sent_after_optout,send_attempt,SEND-2026-001208,CON-005510,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000494,message_sent_after_optout,send_attempt,SEND-2026-001449,CON-012166,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000495,message_sent_after_optout,send_attempt,SEND-2026-001498,CON-004421,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000496,message_sent_after_optout,send_attempt,SEND-2026-001669,CON-000011,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000497,message_sent_after_optout,send_attempt,SEND-2026-001679,CON-005344,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000498,message_sent_after_optout,send_attempt,SEND-2026-001744,CON-000124,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000499,message_sent_after_optout,send_attempt,SEND-2026-001884,CON-000046,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000500,message_sent_after_optout,send_attempt,SEND-2026-001909,CON-009117,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000501,message_sent_after_optout,send_attempt,SEND-2026-001963,CON-000343,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000502,message_sent_after_optout,send_attempt,SEND-2026-001988,CON-006407,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000503,message_sent_after_optout,send_attempt,SEND-2026-002022,CON-001841,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000504,message_sent_after_optout,send_attempt,SEND-2026-002042,CON-018977,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000505,message_sent_after_optout,send_attempt,SEND-2026-002043,CON-002351,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000506,message_sent_after_optout,send_attempt,SEND-2026-002098,CON-008229,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000507,message_sent_after_optout,send_attempt,SEND-2026-002221,CON-000657,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000508,message_sent_after_optout,send_attempt,SEND-2026-002266,CON-015951,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000509,message_sent_after_optout,send_attempt,SEND-2026-002303,CON-014467,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000510,message_sent_after_optout,send_attempt,SEND-2026-002305,CON-005093,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000511,message_sent_after_optout,send_attempt,SEND-2026-002324,CON-000944,suppressed_consent_withdrawn,sent,Message sent while the channel consent in force was opt_out
+GT-000512,message_sent_after_optout,send_attempt,SEND-2026-002402,CON-010134,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000513,message_sent_after_optout,send_attempt,SEND-2026-002433,CON-000414,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000514,message_sent_after_optout,send_attempt,SEND-2026-002512,CON-000414,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000515,message_sent_after_optout,send_attempt,SEND-2026-002553,CON-005824,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000516,message_sent_after_optout,send_attempt,SEND-2026-002595,CON-000064,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out

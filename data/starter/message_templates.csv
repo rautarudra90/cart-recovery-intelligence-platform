@@ -1,0 +1,7 @@
+template_id,variant,channel,step,subject,discount_pct,version,effective_from
+TPL-V1-S1,V1,email,1,We saved your cart,0,1,2026-01-01
+TPL-V1-S2,V1,email,2,Still thinking it over?,0,1,2026-01-01
+TPL-V2-S1,V2,email,1,We saved your cart - 10% off,10,1,2026-01-01
+TPL-V2-S2,V2,email,2,Still thinking it over? - 10% off,10,1,2026-01-01
+TPL-V3-S1,V3,sms,1,,5,1,2026-01-01
+TPL-V3-S2,V3,sms,2,,5,1,2026-01-01

@@ -1,0 +1,18 @@
+gt_id,issue_type,entity_type,entity_id,related_entity_id,expected_value,observed_value,description
+GT-000001,attribution_double_counted_across_campaigns,attribution,ATT-2026-000018,ATT-2026-000011,1 attribution per order,2 attributions,order ORD-2026-000909 credited to campaigns CMP-2026-000070 and CMP-2026-000068
+GT-000002,boundary_abandonment_window,cart,CART-2026-000272,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000003,boundary_abandonment_window,cart,CART-2026-000465,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000004,boundary_abandonment_window,cart,CART-2026-000967,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000005,boundary_abandonment_window,cart,CART-2026-001522,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000006,boundary_abandonment_window,cart,CART-2026-001623,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000007,boundary_abandonment_window,cart,CART-2026-001724,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000008,boundary_abandonment_window,cart,CART-2026-001982,,not_abandoned,,Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)
+GT-000009,cart_abandoned_after_purchase,cart,CART-2026-000183,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000010,cart_abandoned_after_purchase,cart,CART-2026-000476,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000011,cart_abandoned_after_purchase,cart,CART-2026-001164,,purchased,abandoned,abandoned_flagged event and status=abandoned although order exists before abandoned_at
+GT-000012,cart_total_stale_after_quantity_update,cart,CART-2026-000764,,81.21,108.26,cart_total kept pre-update value after quantity_updated event
+GT-000013,cart_total_stale_after_quantity_update,cart,CART-2026-001401,,193.70,139.54,cart_total kept pre-update value after quantity_updated event
+GT-000014,cart_total_stale_after_quantity_update,cart,CART-2026-001612,,242.33,116.25,cart_total kept pre-update value after quantity_updated event
+GT-000015,message_sent_after_optout,send_attempt,SEND-2026-000056,CON-000850,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000016,message_sent_after_optout,send_attempt,SEND-2026-000086,CON-000214,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out
+GT-000017,message_sent_after_optout,send_attempt,SEND-2026-000163,CON-000123,suppressed_no_consent,sent,Message sent while the channel consent in force was opt_out

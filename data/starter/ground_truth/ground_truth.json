@@ -1,0 +1,172 @@
+[
+ {
+  "issue_type": "attribution_double_counted_across_campaigns",
+  "entity_type": "attribution",
+  "entity_id": "ATT-2026-000018",
+  "related_entity_id": "ATT-2026-000011",
+  "expected_value": "1 attribution per order",
+  "observed_value": "2 attributions",
+  "description": "order ORD-2026-000909 credited to campaigns CMP-2026-000070 and CMP-2026-000068",
+  "gt_id": "GT-000001"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000272",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000002"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000465",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000003"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000967",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000004"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001522",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000005"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001623",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000006"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001724",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000007"
+ },
+ {
+  "issue_type": "boundary_abandonment_window",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001982",
+  "related_entity_id": "",
+  "expected_value": "not_abandoned",
+  "observed_value": "",
+  "description": "Order placed at last_activity+60min (inclusive => not abandoned) or +61min (abandoned)",
+  "gt_id": "GT-000008"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000183",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000009"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000476",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000010"
+ },
+ {
+  "issue_type": "cart_abandoned_after_purchase",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001164",
+  "related_entity_id": "",
+  "expected_value": "purchased",
+  "observed_value": "abandoned",
+  "description": "abandoned_flagged event and status=abandoned although order exists before abandoned_at",
+  "gt_id": "GT-000011"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-000764",
+  "related_entity_id": "",
+  "expected_value": "81.21",
+  "observed_value": "108.26",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000012"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001401",
+  "related_entity_id": "",
+  "expected_value": "193.70",
+  "observed_value": "139.54",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000013"
+ },
+ {
+  "issue_type": "cart_total_stale_after_quantity_update",
+  "entity_type": "cart",
+  "entity_id": "CART-2026-001612",
+  "related_entity_id": "",
+  "expected_value": "242.33",
+  "observed_value": "116.25",
+  "description": "cart_total kept pre-update value after quantity_updated event",
+  "gt_id": "GT-000014"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000056",
+  "related_entity_id": "CON-000850",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000015"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000086",
+  "related_entity_id": "CON-000214",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000016"
+ },
+ {
+  "issue_type": "message_sent_after_optout",
+  "entity_type": "send_attempt",
+  "entity_id": "SEND-2026-000163",
+  "related_entity_id": "CON-000123",
+  "expected_value": "suppressed_no_consent",
+  "observed_value": "sent",
+  "description": "Message sent while the channel consent in force was opt_out",
+  "gt_id": "GT-000017"
+ }
+]
