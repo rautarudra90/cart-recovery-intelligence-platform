@@ -46,6 +46,13 @@ def load_validation_summary(data_path: Path):
             return json.load(f)
     return None
 
+def render_chart(chart, use_container_width=True):
+    """Safely renders Altair charts with graceful fallback if Vega/pyarrow has environment conflicts."""
+    try:
+        render_chart(chart, use_container_width=use_container_width)
+    except Exception as e:
+        st.warning(f"Visualization render notice: {e}")
+
 # Sidebar Controls
 st.sidebar.title("🛒 CartRecover-AI")
 st.sidebar.caption("Forward Deployed Engineering Console")
@@ -159,7 +166,7 @@ with get_db(db_path) as session:
             color=alt.Color("Stage:N", legend=None, scale=alt.Scale(scheme="blues")),
             tooltip=["Stage", "Count"]
         ).properties(height=240)
-        st.altair_chart(chart, use_container_width=True)
+        render_chart(chart, use_container_width=True)
 
     # ---------------- TAB 2: CART ANALYTICS ----------------
     with tabs[1]:
@@ -176,7 +183,7 @@ with get_db(db_path) as session:
                 color=alt.Color("status:N", scale=alt.Scale(scheme="category10")),
                 tooltip=["status", "count", "total_value"]
             ).properties(height=260)
-            st.altair_chart(status_pie, use_container_width=True)
+            render_chart(status_pie, use_container_width=True)
 
         with col_r:
             st.write("##### Abandonment Decision Targeting Distribution")
@@ -192,7 +199,7 @@ with get_db(db_path) as session:
                 color=alt.Color("recovery_decision:N", legend=None),
                 tooltip=["recovery_decision", "reason", "count"]
             ).properties(height=260)
-            st.altair_chart(dec_bar, use_container_width=True)
+            render_chart(dec_bar, use_container_width=True)
 
     # ---------------- TAB 3: CAMPAIGN ANALYTICS ----------------
     with tabs[2]:
@@ -211,7 +218,7 @@ with get_db(db_path) as session:
                 y=alt.Y("attributed_revenue:Q", title="Attributed Revenue ($)"),
                 tooltip=["variant", "attributed_revenue"]
             ).properties(height=260)
-            st.altair_chart(c_bar, use_container_width=True)
+            render_chart(c_bar, use_container_width=True)
 
         with col_b:
             st.write("##### Conversion Efficiency (Orders per Sent Message)")
@@ -222,7 +229,7 @@ with get_db(db_path) as session:
                 y=alt.Y("conversion_rate:Q", title="Conversion Rate (%)"),
                 tooltip=["variant", "conversion_rate"]
             ).properties(height=260)
-            st.altair_chart(c_eff, use_container_width=True)
+            render_chart(c_eff, use_container_width=True)
 
     # ---------------- TAB 4: CUSTOMER ANALYTICS ----------------
     with tabs[3]:
@@ -239,7 +246,7 @@ with get_db(db_path) as session:
                 y=alt.Y("customer_count:Q"),
                 color=alt.Color("region:N", legend=None)
             ).properties(height=240)
-            st.altair_chart(reg_chart, use_container_width=True)
+            render_chart(reg_chart, use_container_width=True)
 
         with col2:
             st.write("##### Signup Channel Breakdown")
@@ -248,7 +255,7 @@ with get_db(db_path) as session:
                 theta=alt.Theta("customer_count:Q"),
                 color=alt.Color("signup_source:N")
             ).properties(height=240)
-            st.altair_chart(src_chart, use_container_width=True)
+            render_chart(src_chart, use_container_width=True)
 
     # ---------------- TAB 5: CONSENT MONITORING ----------------
     with tabs[4]:
@@ -270,7 +277,7 @@ with get_db(db_path) as session:
                 y=alt.Y("reason:N", sort="-x", title="Suppression Reason"),
                 tooltip=["reason", "count", "percentage"]
             ).properties(height=220)
-            st.altair_chart(sup_chart, use_container_width=True)
+            render_chart(sup_chart, use_container_width=True)
 
     # ---------------- TAB 6: ANOMALY MONITORING ----------------
     with tabs[5]:
